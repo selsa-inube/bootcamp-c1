@@ -7,8 +7,10 @@
     <title>Markdown a PDF</title>
   </head>
   <body>
-    <h1>React</h1>
-    <hr />
+    <header>
+      <h1>React</h1>
+      <hr />
+    </header>
 
     <main>
       <div>
@@ -115,8 +117,70 @@
           first one to get you started:
         </p>
         <div>
-          <code> import { createRoot } from "react-dom/client"; </code>
+          <code>
+            import { createRoot } from "react-dom/client";<br /><br />
+            function HelloMessage({ name }) { <br />
+            &nbsp;return &lt;div&gt;Hello {name}&lt;/div&gt;;<br />
+            } <br /><br />
+            const root = createRoot(document.getElementById("container"));<br />
+            root.render(&lt;HelloMessage name="Taylor" /&gt;);
+          </code>
+
+          <p>
+            This example will render "Hello Taylor" into a container on the
+            page.
+          </p>
+
+          <p>
+            You'll notice that we used an HTML-like syntax;
+            <a href="#">we call it JSX.</a> JSX is not required to use React,
+            but it makes code more readable, and writing it feels like writing
+            HTML. If you're using React as a <code>&lt;script&gt;</code> tag,
+            read <a href="#">this section</a> on integrating JSX; otherwise, the
+            <a href="#">recommended JavaScript toolchains</a> handle it
+            automatically.
+          </p>
         </div>
+      </div>
+
+      <h2>Contributing</h2>
+      <hr />
+
+      <div>
+        <p>
+          The main purpose of this repository is to continue evolving React
+          core, making it faster and easier to use. Development of React happens
+          in the open on GitHub, and we are grateful to the community for
+          contributing bugfixes and improvements. Read below to learn how you
+          can take part in improving React.
+        </p>
+
+        <h3><a href="#">Code of Conduct</a></h3>
+        <p>
+          Facebook has adopted a Code of Conduct that we expect project
+          participants to adhere to. Please read
+          <a href="#">the full text</a> so that you can understand what actions
+          will and will not be tolerated.
+        </p>
+
+        <h3><a href="#">Contributing Guide</a></h3>
+        <p>
+          Read our
+          <a href="#">contributing guide</a> to learn about our development
+          process, how to propose bugfixes and improvements, and how to build
+          and test your changes to React.
+        </p>
+
+        <h3>Good First Issues</h3>
+        <p>
+          To help you get your feet wet and get you familiar with our
+          contribution process, we have a list of
+          <a href="#">good first issues</a> that contain bugs that have a
+          relatively limited scope. This is a great place to get started.
+        </p>
+
+        <h3>License</h3>
+        <p>React is <a href="#">MIT licensed.</a></p>
       </div>
     </main>
   </body>
