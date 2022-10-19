@@ -1,0 +1,158 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.content-press-release {
+  width: 650px;
+  font-size: 14px;
+  margin: 20px auto 20px auto;
+}
+
+.press-release {
+  display: block;
+  color: #6e6e73;
+  font-weight: bold;
+}
+
+.date {
+  font-size: 14px;
+  color: #6e6e73;
+  font-weight: bold;
+}
+
+h1 {
+  width: 650px;
+  margin: 0 auto 0 auto;
+}
+
+.content-1 {
+  width: 650px;
+  font-size: 24px;
+  font-weight: 500;
+  margin: auto auto;
+}
+
+.social-networks {
+  width: 650px;
+  margin: 50px auto auto auto;
+}
+
+.list-ul {
+  list-style: none;
+}
+
+.list {
+  display: inline-block;
+}
+
+.list a {
+  color: #6e6e73;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content-image {
+  height: auto;
+  width: 100%;
+  height: 650px;
+}
+
+.image {
+  width: 980px;
+  margin: 50px auto 320px auto;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.img-comment {
+  width: 650px;
+  color: #6e6e73;
+  font-size: 13px;
+  margin: auto auto auto auto;
+}
+
+.content-2 {
+  width: 650px;
+  font-size: 18px;
+  font-weight: 500;
+  margin: auto auto;
+}
+
+.content-3 {
+  width: 650px;
+  font-size: 18px;
+  font-weight: 500;
+  margin: auto auto;
+}
+
+.text-article {
+  width: 620px;
+  display: flex;
+  padding: 30px;
+  margin: 50px auto;
+  border-radius: 10px;
+  background-color: #f5f5f7;
+}
+
+.article-2 {
+  padding-right: 12px;
+}
+
+.article-3{
+    width: 500px;
+}
+
+.copy a{
+    color:black;
+}
+
+.copy{
+    width: 100px;
+    height: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 30px;
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+.content-4 {
+  width: 650px;
+  font-size: 14px;
+  font-weight: 500;
+  margin: auto auto;
+}
+
+hr {
+  width: 650px;
+  margin: auto auto;
+}
+
+h2 {
+  width: 650px;
+  margin: 20px auto auto auto;
+}
+
+.contact {
+  width: 650px;
+  display: block;
+  margin-top: -4px;
+  margin: auto auto auto auto;
+}
+
+.contact-1 {
+  width: 326px;
+  margin: 28px -4px 0 0;
+  word-wrap: break-word;
+  display: inline-block;
+  box-sizing: border-box;
+}
