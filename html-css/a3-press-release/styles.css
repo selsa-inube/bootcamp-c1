@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body {
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color: #1d1d1f;
+    font-size: 17px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main {
+    padding-top: 150px;       
+    width: 980px;
+    margin: auto;
+}
+
+article {     
+    width: 653px;    
+    margin: auto;
+}
+
+h2 {
+    width: 576px;
+    margin: auto;
+    font-size: 1.3em;
+    padding-bottom: 15px;
+}
+
+a {
+    color: #06c;
+}
+
+h3 {
+    font-size: 0.8em;
+    width: 576px;
+    margin: auto;   
+    padding-bottom: 5px;
+}
+
+.press {
+    font-weight: 700;
+    color: #6E6E73;
+    width: 576px;
+    margin: auto;
+    padding-bottom: 20px;
+    font-style: normal;
+}
+
+.press-title {
+    /* font-size: 12px; */
+    font-size: 0.7em;
+    margin: 0px -8px 0px 0px;
+}
+
+.press-date {
+    margin: 4px -8px 0 0;
+    font-size: 0.8em;
+}
+
+.title {
+    margin: auto;
+    margin-bottom: 40px;
+    width: 576px;
+}
+
+.title-article {      
+    font-size: 1.5em;
+    padding-bottom: 20px;   
+}
+
+.title-description { 
+    font-size: 1.2em;    
+    font-weight: 500;
+    font-style: normal;
+}
+
+.share {
+    width: 576px;
+    margin: auto;
+    margin-bottom: 30px;
+    opacity: calc(60%);
+}
+
+.share-icons {
+    height: 42px;
+    overflow: visible;
+    display: inline-flex;
+    list-style: none;
+}
+
+.share-item {
+    padding: 6px;
+    border: none;
+    background-color: #fff;
+}
+
+.share-title {
+    color: #1d1d1f;
+}
+
+.img {
+    width: 653px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.title-img {
+    width: 100%;
+    border-radius: 15px;
+    align-content: center;
+}
+
+.full-description {
+    display: inline-flex; 
+    width: 576px;
+    margin: auto;
+}
+
+.description-img {
+    width: 576px;
+    font-size: 0.7em;
+    padding-left: 40px;
+}
+
+.paragraph {
+    width: 576px;
+    margin: auto;    
+    margin-bottom: 20px;    
+    font-size: 0.95em;
+}
+
+.list-paragraph {
+    width: 540px;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+.item-list {
+    font-size: 0.98em;
+    margin-bottom: 5px;
+}
+
+.small-paragraph {
+    font-size: 0.7em;
+    width: 576px;
+    margin: auto; 
+    padding-bottom: 20px; 
+}
+
+.contact {
+    width: 576px;
+    margin: auto;
+    padding: 40px 0px 20px 0px;
+    font-size: 0.9em;
+}
+
+.contact-box {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));    
+}
