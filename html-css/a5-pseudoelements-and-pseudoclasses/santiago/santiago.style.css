@@ -73,11 +73,14 @@ button:enabled {
   cursor: pointer;
 }
 
+.content-terms:target {
+  background-color: #deebff;
+}
+
 .content-terms {
   width: 800px;
   margin: 0px auto;
   border-radius: 10px;
-  background-color: #deebff;
 }
 
 .content-terms p {
@@ -104,5 +107,5 @@ ul {
 }
 
 .content-terms li:nth-child(2n + 1) {
-  background-color: #5e6c84;
+  color: #5e6c84;
 }
