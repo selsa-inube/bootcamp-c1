@@ -1,0 +1,118 @@
+body {
+   font-family: "Helvetica Neue","Helvetica","Arial", "sans-serif";
+}
+
+
+#content {
+   margin-left: auto;
+   margin-right: auto;
+   width: 680px;
+}
+
+span {
+   display: block;
+}
+
+.date-category {
+   font-size:13px;
+   color: rgb(146, 146, 153);
+   display: block;
+}
+
+
+h1{
+   font-size: 2.8em;
+}
+
+.subtitle {
+   font-size: 1.5em;
+}
+
+.btn-item{
+   background-color: transparent;
+   border: none;
+   padding: 10px;
+}
+
+.btn-item>img{
+   width: 20px;
+  filter: opacity(0.3) drop-shadow(0 0 0 gray);
+}
+
+#content-image1{
+
+   margin: 15px 0px 50px 0px;
+}
+
+#content-image1-text {
+    display: inline-flex;
+}
+
+#a-arrow {
+   border-radius: 50%;
+    border: none;
+    background: rgb(232, 232, 237);
+    display: block;
+    margin: auto;
+}
+
+#a-arrow>img{
+   width: 12px;
+}
+
+.a-content{
+   display: flex;
+}
+
+
+#image-1 {
+   display: flex;
+   justify-content: center;
+   margin-left:-120px;
+   border-radius: 10px;
+}
+
+#imagen-text {
+   font-size: 14px;
+   font-weight: 700;
+   color: rgb(146, 146, 153);
+   margin-top: 10px;
+}
+
+#text-section {
+    font-size: 19px;
+}
+
+.content-paragraphs {
+   margin-top: 60px;
+}
+
+p {
+   margin-top: 30px;
+}
+
+#content-about {
+   font-size: 13px;
+   margin-top: auto;
+   margin-bottom: 50px ;
+}
+
+#about-title{
+   margin:auto;
+}
+
+#box-title-contacts{
+ margin: 50px 0px 10px 0px;
+}
+
+#box-contacts {
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   display: grid;
+   grid-gap: 1rem;
+}
+
+.box-contacts-option>h3{
+   margin-bottom: auto;
+}
+
+
