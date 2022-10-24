@@ -120,7 +120,7 @@ span {
 
 section:nth-of-type(1) div:nth-of-type(2){
     background-color: #bbbbbb;
-     margin: 40px 20px;
+    margin: 60px 20px;
     padding: 90px;
     columns: 2;  
 }
@@ -183,10 +183,11 @@ section:nth-of-type(2) figure{
 
 section:nth-of-type(2) {
     margin-left: 70px;
+    margin-top: 50px;
 }
 
  section:nth-of-type(3) div{
-    margin:240px 70px auto 200px;
+    margin:280px 70px auto 200px;
 }
 
 h4{
