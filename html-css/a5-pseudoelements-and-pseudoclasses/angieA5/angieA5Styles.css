@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Calibri","Vernada";
+  
+}
+
+.cont-form {
+   padding: 80px;
+  width: 400px;
+  background-color: #e5f7e3;
+  margin: 50px auto;
+  text-align: center;
+  box-shadow: 2px 3px #888888;
+}
+
+.cont-form h2 {
+ margin: 1.5em 1.5em;
+ color:#425c57;
+ font-size: 35px;
+}
+
+.inputs {
+    width:180px;
+	padding:5px 70px;
+	border-radius:15px;
+	background-color:#ffffff;
+	margin:12px 0;
+    text-align: center;
+}
+
+.input-required:valid{ 
+    border: 3px solid #48ab24;  
+}
+
+.input-required:invalid{
+    border: 3px solid #800000;
+}
+
+.input-option:optional{
+    border: 1px solid black;
+}
+
+.content-check input{
+    display: inline;
+    margin-right: 12px;
+}  
+
+.check{
+    margin-top: 25px;
+}
+
+.check:checked {
+    border: none;
+    outline: 2px solid #bc4316;
+}
+
+.content-check a:hover,
+.content-check a:visited:hover {
+    color: #29e1cb;
+  
+}
+
+.content-check a:active,
+.content-check a:visited:active {
+    color: rgb(203, 28, 200);
+}
+
+.content-check a:visited{
+    color: rgb(43, 28, 203);
+}
+
+
+#terms-and-conditions {
+    margin-top: 70px;
+}
+
+
+#terms-and-conditions h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.content-paragraphs,
+#terms-and-conditions h2
+{
+   margin-left: auto;
+   margin-right: auto;
+   width: 700px;
+}
+
+
+#terms-and-conditions:target{
+    background-color: #DEEBFF;
+    position: absolute;
+    margin-left: 300px;
+    padding: 120px;
+    align-items: center;
+    justify-content: center;
+}
+
+#terms-and-conditions p:first-child {
+    color: #0747A6;
+  }
+
+
+p{
+    margin: 10px 15px;
+}
+
+.list {
+    padding: 0 0 0 4.0em;
+  }
+
+  ::marker {
+    color:#5E6C84;
+    
+  }
+
+:nth-child(even)::marker {
+    color: rgb(192, 18, 67);
+  }
+
+.list li {
+    list-style-type: '=> ';
+}
+
+
+
+.btn {
+    width: 10em;
+   height: 3em;
+    border: 3px solid #b9efd9;
+    margin: 40px auto auto 50px;
+   border-radius: 5px;
+   font-weight: bold;
+   cursor: pointer; 
+   
+}
+
+
+.content-btn{
+ margin-right: 50px;
+}
+
+
+.btn:disabled{
+   background-color:#EBECF0;
+   color:#505F79;
+   cursor: not-allowed;
+}
+
+.btn:enabled{
+background-color: #57D9A3;
+color: #00875A;
+}
+
+
+
+
+
