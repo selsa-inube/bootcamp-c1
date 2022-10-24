@@ -139,9 +139,12 @@ button:enabled {
 .content {
     width: 800px;
     margin: 0px auto 50px;
-    background-color: #DEEBFF;    
     border-radius: 20px;
     box-shadow: 3px 3px 5px #E5E8E8;
+}
+
+#test-link:target {
+    background-color: #DEEBFF;
 }
 
 .content p {
