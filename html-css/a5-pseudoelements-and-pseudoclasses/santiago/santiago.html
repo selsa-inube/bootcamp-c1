@@ -25,7 +25,7 @@
         <div class="container-2">
           <h1>Subscribe to our newsletter</h1>
           <div class="form-content">
-            <form action="">
+            <form action="send.php" method="post">
               <input class="item" type="text" placeholder="Name" required />
               <input
                 class="item"
@@ -33,22 +33,21 @@
                 placeholder="E-mail"
                 required
               />
-              <input class="item" type="tel" placeholder="telephone number" />
+              <input class="item" type="tel" placeholder="telephone number"/>
+
               <div class="content-tm">
-                <input type="checkbox" id="terms" /><span
-                  >I accept the <a href="#terms">terms and conditions</a>.</span
-                >
+                <input type="checkbox" id="terms" required/><span>I accept the <a href="#terms">terms and conditions</a>.</span>
               </div>
-              
+
+              <div class="btn-one">
+                <button type="submit" class="btn-two">Subscribe</button>
               </div>
-              <div class="btn">
-                <button type="submit" id="submitw">Subscribe</button>
-              </div>
+
             </form>
           </div>
         </div>
       </div>
-      <div class="content-terms">
+      <div id="content-terms">
         <h1>Terms and conditions.</h1>
 
         <p>

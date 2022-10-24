@@ -50,7 +50,7 @@ input:valid {
   border-color: green;
 }
 
-.btn {
+.btn-one {
   text-align: center;
   margin: 20px auto;
 }
@@ -73,25 +73,25 @@ button:enabled {
   cursor: pointer;
 }
 
-.content-terms:target {
+#content-terms:target {
   background-color: #deebff;
 }
 
-.content-terms {
+#content-terms {
   width: 800px;
   margin: 0px auto;
   border-radius: 10px;
 }
 
-.content-terms p {
+#content-terms p {
   font-size: 0.75rem;
   padding: 10px;
 }
 
-.content-terms p:first-of-type {
+#content-terms p:first-of-type {
   color: #0747a6;
 }
-.content-terms p:last-of-type {
+#content-terms p:last-of-type {
   margin-top: 15px;
   padding-bottom: 10px;
 }
@@ -99,13 +99,13 @@ ul {
   padding: 20px;
 }
 
-.content-terms li {
+#content-terms li {
   width: 120ch;
   font-size: 0.7rem;
   list-style-type: square;
   text-align: center;
 }
 
-.content-terms li:nth-child(2n + 1) {
+#content-terms li:nth-child(2n + 1) {
   color: #5e6c84;
 }
