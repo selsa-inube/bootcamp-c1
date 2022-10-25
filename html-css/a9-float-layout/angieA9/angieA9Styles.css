@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif, Century,Georgia, 'Times New Roman';
+   
+}
+
+body {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.menu{
+
+    float: left;
+    width: 20%;
+    height: 720px;
+    background-color: #292c2f;
+}
+
+main {
+    margin-top:160px;
+    margin-left: 68px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.menu strong {
+    font-weight: bold;
+    
+}
+
+span {
+    box-sizing: border-box;
+    color: #FFFFFF;
+}
+
+.menu span {
+    padding-left: 20px;
+    font-size: 15px;
+    display: inline;   
+}
+
+ li{
+    list-style-type: none;
+    text-align: left;
+    padding: 10px 28px;
+    width: 100%;
+    height: 100%;
+}
+
+.list-first-aside li:nth-of-type(1)  {
+    margin-bottom: 20px;
+    justify-content: center;
+  
+}
+
+li:hover {
+    background-color: #1a1b1c;    
+    cursor: pointer;
+    color: #f6c054;
+}
+
+
+ul{
+    margin: 18px 15px;
+    
+}
+
+.menu li:nth-of-type(1) span {
+    font-weight: bold;
+    position: relative;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.menu img[alt="avatar"]{
+    width: 35px;
+    height: 35px;
+    border-radius: 40px;
+    position: relative;
+  }
+
+.list-first-aside img{
+    display: inline-block;
+    vertical-align: top;
+    width: 25px;
+    height: 25px;
+}
+
+.list-first-aside img:hover{
+    filter: invert(0.4) sepia(1) hue-rotate(20deg) saturate(1000%);
+}
+
+
+
+.list-second-aside a{
+    color: #87919b;
+    font-size: 12px;
+}
+
+
+.list-second-aside strong{
+    color: #FFFFFF;
+}
+
+hr{
+    border-color: #55575a;
+}
+
+.content { 
+float: right;                  
+width: 80%;
+height: 720px;
+background-image: url("../angieA9/images/earth2.jpg");
+}
+
+
+.content h1{
+    color: #FFFFFF;
+    font-size: 55px;
+    margin-bottom: 3%;
+    font-weight: 700;
+    
+}
+
+.content h2{
+    color: #FFFFFF;
+    font-size: 32px;
+    margin-bottom: 140px;
+    font-weight: lighter;
+}
+
+
+.content-btn {
+    width: 50%;
+    display: flex;
+    align-items: center;
+
+}
+
+button {
+    height: 55px;
+    width: 110px;
+    border-radius: 12px;
+    font-weight: 700;
+    display: inline;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.btn-play img{
+    width: 50px;
+    height: 35px;
+    margin-top: 10px; 
+    margin-left:30px;
+    
+} 
+
+
+.btn-play {
+ background-color: #f8a502;  
+ margin-right: 15px;
+ display: inline-block;
+ 
+} 
+
+
+.btn-play span{
+    display: inline-block;
+    margin: 18px 0px 0px 15px;
+    position: absolute;
+    color: #000000;
+}
+
+
+.btn-play:hover{
+    background-color: #f6c054;
+}
+
+.btn-play:active{
+    background-color: #bd8007;
+}
+
+
+.btn-info {
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+    background-color: transparent;
+    display: inline-block;
+    
+}
+
+.btn-info img{
+    width: 12px;
+    color: wheat ;
+    margin-top: 10px;
+    margin-left: 65px;
+    
+}
+
+.btn-info span{
+    display: inline-block;
+    margin: 9px 0px 0px 4px;
+    position: absolute;
+}
+
