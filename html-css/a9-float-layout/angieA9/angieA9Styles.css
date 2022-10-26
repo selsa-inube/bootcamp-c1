@@ -5,11 +5,9 @@
    
 }
 
-
 body {
     overflow: hidden;
     width: 100%;
-    height: 100%;
 }
 
 .menu{
@@ -18,6 +16,7 @@ body {
     width: 20%;
     height: 720px;
     background-color: #292c2f;
+    min-height: 100vh;
 }
 
 main {
@@ -115,7 +114,7 @@ hr{
 .content { 
 float: right;                  
 width: 80%;
-height: 720px;
+height: 100vh;
 background-image: url("../angieA9/images/earth2.jpg");
 }
 
