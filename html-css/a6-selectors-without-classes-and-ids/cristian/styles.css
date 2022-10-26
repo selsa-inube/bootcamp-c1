@@ -6,7 +6,7 @@
     font-weight: 400;
 }
 
-header {
+nav {
     background-color: #2E2E38;
     width: 100%;
     height: 85px;
@@ -16,17 +16,17 @@ header {
     grid-gap: 10px;
 }
 
-header div:last-of-type {
+nav div:last-of-type {
     display: grid;
     grid-template-columns:  minmax(50%, 60%) 1fr;    
     grid-gap: 10px;
 }
 
-header :is(li) {
+nav :is(li) {
     display: inline;
 }
 
-header :is(button) {
+nav :is(button) {
     box-sizing: border-box;
     width: 110px;
     height: 80px;
@@ -37,7 +37,7 @@ header :is(button) {
     font-weight: 500;
 }
 
-header img {
+nav img {
     width: 60px;
     padding-top: 10px;
 }
@@ -65,40 +65,40 @@ main {
     grid-gap: 8em;
 }
 
-nav div {
+aside div {
     margin-bottom: 20px;
 }
 
-nav div :is(p) {
+aside div :is(p) {
     font-size: 14px;
     margin-top: 0px;
 }
 
-nav div :is(div) {
+aside div :is(div) {
     margin-top: 15px;
 }
 
-nav div a:only-of-type {
+aside div a:only-of-type {
     font-weight: 700;
     font-size: 16px;
 }
 
-nav div p:only-of-type {
+aside div p:only-of-type {
     font-size: 14px;
     margin-top: 10px;
 }
 
-nav p {
+aside p {
     font-size: 16px;
     margin: 15px 0;
     padding-left: 5px;
 }
 
-nav p:last-of-type {
+aside p:last-of-type {
     font-size: 14px;
 }
 
-nav a:not([href]) {
+aside a:not([href]) {
     display: block;
     border: 1px solid #0F0F0F;
     width: 100%;
@@ -108,16 +108,16 @@ nav a:not([href]) {
     font-weight: 700;
 }
 
-nav a {
+aside a {
     text-decoration: none;
 }
 
-nav ul {
+aside ul {
     list-style-type: none;
     display:inline-flex;
 }
 
-nav li {
+aside li {
     padding: 7px;
     margin:25px 5px 25px 3px;
     border: 1px solid #000;
