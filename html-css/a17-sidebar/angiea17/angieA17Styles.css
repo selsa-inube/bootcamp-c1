@@ -93,9 +93,8 @@ nav  .list-six li:hover {
   border: none;
 }
 
-nav .list-one li,
-nav .list-six li{
-  padding: 0px 25px 0px 27px;
+nav .list-one li{
+  padding: 0px 25px 0px 25px;
   border: none;
   background: transparent;
 }
@@ -131,7 +130,7 @@ nav .list-five{
   z-index: 1;
 }
 
-nav .list-six ul li{
+nav .list-six ul {
   padding: 0; 
 }
 
@@ -217,7 +216,7 @@ hr{
   margin: 0;
   padding: 0;
   z-index: 2;
-  left: 85px;
+  left:85px;
   justify-content: center;
   border-radius: 12px;
   background-color: white;
@@ -231,7 +230,7 @@ hr{
 
 .nav-submenu-two{
   bottom: 10px; 
-  width: 200px;
+  width: 210px;
 }
 
 .nav-submenu-content{
@@ -261,6 +260,9 @@ nav li:hover ul{
     margin-left: 10px;
 }
 
+.list-six li:nth-last-of-type(1){
+  padding: 20px;
+}
 
 .list-six-content img{
   display: inline-block;
@@ -300,8 +302,3 @@ nav li:hover ul{
   padding: 0px;
 }
 
-a[title]{
-  border-radius: 20px;
-  color: red;
-  background-color: coral;
-}
