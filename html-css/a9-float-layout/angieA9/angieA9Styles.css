@@ -112,9 +112,10 @@ hr{
 }
 
 .content { 
-float: right;                  
+float: right;  
+padding: auto;                
 width: 80%;
-height: 100vh;
+min-height: 100vh;
 background-image: url("../angieA9/images/earth2.jpg");
 }
 
