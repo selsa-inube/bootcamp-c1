@@ -11,8 +11,8 @@ header {
 }
 
 header li {
-  display: inline;
   color: white;
+  display: inline;
 }
 
 header img {
@@ -24,102 +24,109 @@ img {
   height: 100%;
 }
 
-article {
-  width: 100%;
-  display: inline-block;
-}
-
-h1 {
-  width: 950px;
-  color: #ffffff;
-  margin: -180px 0px 50px 80px;
+main div h1 {
   font-size: 44px;
   font-weight: 500;
+  color: #ffffff;
+  margin: -180px 0px 50px 80px;
 }
 
-h1 {
-  font-size: 2.5rem;
-  line-height: 60px;
-}
-
-h2 {
-  width: 950px;
-  margin: 20px 10px 20px 27%;
-}
-
-hr {
-  width: 850px;
-  margin: 20px 10px 20px 27%;
-}
-
-p strong {
-  margin: 20px 10px 20px 27%;
-}
-
-ul {
-  padding: 30px;
-  margin: 20px 10px 20px 27%;
-}
-
-ul li {
-  padding-left: 10px;
-  font-size: 18px;
-}
-
-article p {
-  width: 950px;
-  margin: 30px 0;
-  font-size: 20px;
-  text-align: justify;
-  margin: 20px 10px 20px 27%;
-}
-
-strong {
-  margin: 20px 10px 20px 27%;
-}
-
-.firts:first-of-type::first-letter {
-  float: left;
-  font-size: 2.5em;
-  line-height: 1;
-  font-weight: bold;
-  color: #000000;
-  margin-inline-end: 0.2rem;
+main article {
+  margin: -70px 200px auto 100px;
 }
 
 h3 {
-  font-size: 25px;
-  margin: 20px 10px 20px 27%;
+  margin: 50px 0px;
+  font-size: 1.5rem;
+}
+
+article p {
+  line-height: 30px;
+}
+
+hr {
+  margin: 35px auto 35px -5px;
+}
+
+li {
+  margin-left: 30px;
+  padding: 0px 15px 5px 22px;
+}
+
+ul {
+  margin: 50px 0px;
 }
 
 span {
   font-size: 100px;
-  margin: 20px 10px 20px 27%;
+}
+
+main article:first-of-type {
+  width: 900px;
+  margin: 100px 10px 20px 27%;
 }
 
 div p:only-child::first-letter {
   float: left;
-  font-size: 80px;
-  line-height: 0.5;
+  color: #000000;
+  font-size: 100px;
+  line-height: 0.4;
+  margin-inline-end: 0.2rem;
 }
 
-article:nth-of-type(1) div:nth-of-type(1) {
+article:nth-of-type(1) div:nth-of-type(2) {
   columns: 2;
-  width: 900px;
-  height: 200px;
+  padding: 100px;
+  margin: 50px 0px;
   text-align: center;
-  justify-content: center;
-  background-color: #bbbbbb;
-  margin: 20px 10px 20px 27%;
-  padding: 90px 50px 30px 20px;
+  background-color: #c4c4c4;
 }
 
-article:nth-of-type(1) div:nth-of-type(1) span {
+article:nth-of-type(1) div:nth-of-type(2) span {
   font-size: 50px;
 }
 
-article:nth-of-type(1) div:nth-of-type(1) p {
-  width: 300px;
-  font-size: 15px;
-  text-align: center;
+article:nth-of-type(1) div:nth-of-type(3) hr,
+article:nth-of-type(1) div:nth-of-type(4) hr {
+  margin: 0px;
+}
+
+article:nth-of-type(1) div:nth-of-type(3) p,
+article:nth-of-type(1) div:nth-of-type(4) p {
+  margin: 20px 0px 40px 0px;
+}
+
+article:nth-of-type(1) div:nth-of-type(4) {
+  columns: 2;
+}
+
+article:nth-of-type(1) div:nth-of-type(3) {
+  columns: 2;
+}
+
+article:nth-of-type(3) div {
+  margin: 300px 0px 0px 200px;
+}
+
+article:nth-of-type(2) figure {
+  display: inline-block;
+  position: relative;
+}
+
+article figcaption {
+  top: 250px;
+  width: 340px;
+  padding: 30px;
+  color: #fdf6f6;
+  position: absolute;
+  background-color: #2e2e38;
+}
+
+img[alt="Olivares"],
+img[alt="Lozano"] {
+  width: 400px;
+}
+
+h4 {
+  font-size: 20px;
 }
