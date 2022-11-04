@@ -8,13 +8,13 @@
 
 body {
   display: grid;
-  grid-template-rows: 70px 60% 40%;
+  grid-template-rows: 7% 56% 37%;
   height: 170vh;
 }
 
 header {
   display: grid;
-  grid-template-columns: 150px 1fr 150px;
+  grid-template-columns: 1fr 2.5fr 1fr;
   background-color: #121212;
   border-bottom: 1px solid #abb2b9;
 }
@@ -52,7 +52,7 @@ header div {
 
 header span {
   background-color: #f62524;
-  padding: 0 5px;
+  padding: 1px 5px;
   border-radius: 10px;
   margin-left: 5px;
   font-size: 12px;
@@ -63,7 +63,7 @@ button {
   background-color: #1f74ff;
   color: #fff;
   font-weight: 600;
-  border-radius: 7px;
+  border-radius: 10px;
 }
 
 .menu {
@@ -72,13 +72,13 @@ button {
 
 section {
   background-color: #121212;
-  display: grid;
-  grid-template-columns: 62% 38%;
+  display: flex;
 }
 
 .title {
-  margin-left: 80px;
-  margin-top: 120px;
+  width: 50%;
+  margin: 5% 5% 20% 5%;
+  flex-wrap: wrap;
 }
 
 h5 {
@@ -90,7 +90,7 @@ h5 {
 h1 {
   color: #fff;
   font-weight: 100;
-  font-size: 60px;
+  font-size: 54px;
 }
 
 h1 span {
@@ -99,10 +99,10 @@ h1 span {
 
 .description {
   color: #fff;
-  width: 60%;
-  margin-right: 80px;
-  margin-top: 120px;
-  font-size: 16px;
+  width: 30%;
+  margin: 5% 15% 25% 5%;
+  font-size: 18px;
+  flex-wrap: wrap;
 }
 
 .description p {
@@ -139,11 +139,12 @@ footer {
 }
 
 img {
-  width: 65%;
-  display: block;
+  width: 60%;
+  max-height: 800px;
+  display:flex;
+  top: -150%;
+  margin: auto;
   position: relative;
-  top: -380px;
-  left: 240px;
   box-shadow: 1px 2px 5px #4d5656;
 }
 
@@ -189,13 +190,65 @@ footer a {
   grid-template-rows: 70% 30%;
 }
 
-@media only screen and (max-width: 425px) {
-  body {
-    display: grid;
-    grid-template-rows: 70px 1.6fr 0.4fr;
-    height: 100vh;
+@media only screen and (max-width: 980px) and (min-width: 481px) {
+  
+  header {
+    grid-template-columns: 1fr 6fr 1fr;
   }
 
+  header button {
+    margin-right: 5px;
+  }
+  
+  section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  nav span {
+    display: none;
+  }
+
+  .title {
+    width: 80%;
+    margin: 10% auto -20%;
+  }
+
+  .description {
+    width: 80%;
+    margin: 5% auto 10%;
+  }
+
+  img {    
+  top: -70%;
+  }
+
+  footer ul {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  footer li {
+    padding: 0px 10px 10px;
+  }
+
+  footer i {
+    font-size: 50px;
+    color: #7f8c8d;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  body {
+    display: grid;
+    grid-template-rows: 7% 55% 38%;
+    height: 120vh;
+  }
+ 
   header {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -218,12 +271,13 @@ footer a {
   }
 
   section {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .title {
-    margin-left: 20px;
-    margin-top: 80px;
+    margin: 20% 10% 0% ;
+    width: 80%;
   }
 
   h5 {
@@ -235,19 +289,13 @@ footer a {
   }
 
   .description {
-    margin-top: 30px;
-    margin-left: 20px;
-    font-size: 13px;
+    margin: -20% 10% 0%;
     width: 80%;
+    font-size: 13px;
   }
 
-  img {
-    width: 70%;
-    display: block;
-    position: relative;
-    top: -100px;
-    left: 60px;
-    box-shadow: 1px 2px 5px #4d5656;
+  img {    
+    top: -40%;
   }
 
   footer {
@@ -262,13 +310,11 @@ footer a {
     grid-template-rows: 25% 1fr;
   }
 
-  footer ul {
-    margin: 0 auto;
-    display: grid;
+  footer ul {    
     width: 100%;
-    height: 10px;
-    grid-template-columns: repeat(3, 2fr);
-    grid-template-rows: 1fr 1fr;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   h6 {
@@ -282,7 +328,7 @@ footer a {
   }
 
   footer i {
-    font-size: 24px;
+    font-size: 40px;
   }
 
   footer span {
