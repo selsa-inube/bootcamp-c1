@@ -238,8 +238,23 @@ body > main > article > div:nth-child(32) > div:nth-child(1) > h2{
     font-weight:200;
 }
 
+body > main > article > div:nth-child(32) > div:nth-child(1){
+    margin-right: 55px;
+}
+
 body > main > article > div:nth-child(32) > div:nth-child(2){
-    margin-top: 100px;
+    margin-top: 200px;
+    width: 1500px;
+}
+
+body > main > article > div:nth-child(32) > div:nth-child(2) > p{
+    margin: 5px 0px;
+    font-size: 1rem;
+    color: gray;
+}
+
+body > main > article > div:nth-child(32) > div:nth-child(2) > h2{
+    font-size: 2rem;
 }
 
 body > main > article > div:nth-child(32) > div:nth-child(2) > a{
@@ -251,6 +266,123 @@ body > main > article > div:nth-child(32) > div:nth-child(2) > a{
 body > main > article > div:nth-child(32) > div:nth-child(2) > a:hover{
     border-bottom: 1px solid black;
 }
+
+/* card contact */
+
+body > main > div > div{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin: auto;
+}
+
+body > main > div > h2{
+    font-size: 2.5rem!important;
+    font-weight: 1000 ;
+    font-family: 'EYInterstate',sans-serif;
+    font-weight: 100!important;
+    width: 95%;
+    margin: 100px auto 50px auto !important;
+}
+
+body > main > div > div > div:nth-child(1) > img{
+    position: absolute;
+    z-index: -1;
+    width: 600px;
+}
+
+body > main > div > div > div:nth-child(1) > div{
+    background-color: #2E2E38;
+    width: 600px;
+    margin-right: 20px;
+    margin-top: 350px;
+    color: #fff;
+
+}
+
+body > main > div > div > div:nth-child(1) > div > b{
+    padding: 20px;
+    margin: 0px;
+    color: yellow;
+    font-family: 'EYInterstate',sans-serif;
+    font-weight: 200;
+}
+
+body > main > div > div > div:nth-child(1) > div > h3{
+    padding: 20px;
+    margin: 0px;
+    font-family: 'EYInterstate',sans-serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+body > main > div > div > div:nth-child(1) > div > p{
+    padding: 20px 20px 30px 20px;
+    margin: 0px;
+    font-weight: 300;
+    font-size: 16px;
+    font-family: 'EYInterstate',sans-serif;
+    font-weight: 200;
+}
+
+body > main > div > div > div:nth-child(2) > img{
+    position: absolute;
+    z-index: -1;
+    width: 600px;
+}
+
+body > main > div > div > div:nth-child(2) > div{
+    background-color: #2E2E38;
+    width: 600px;
+    margin-right: 20px;
+    margin-top: 350px;
+    color: #fff;
+
+}
+
+body > main > div > div > div:nth-child(2) > div > b{
+    padding: 20px;
+    margin: 0px;
+    color: yellow;
+    font-family: 'EYInterstate',sans-serif;
+    font-weight: 200;
+}
+
+body > main > div > div > div:nth-child(2) > div > h3{
+    padding: 20px;
+    margin: 0px;
+    font-family: 'EYInterstate',sans-serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+body > main > div > div > div:nth-child(2) > div > p{
+    padding: 20px 20px 30px 20px;
+    margin: 0px;
+    font-weight: 300;
+    font-size: 16px;
+    font-family: 'EYInterstate',sans-serif;
+    font-weight: 200;
+}
+
+body > main > div:nth-child(3){
+    width: 60%;
+    margin: auto;
+}
+
+body > main > div:nth-child(3) > h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.8rem!important;
+    margin: 100px 0px 0px 0px!important;
+}
+
+body > main > div:nth-child(3) > p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem!important;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
 
 
 
