@@ -83,21 +83,8 @@ input[type="submit"]{
     color: #00875A;
 }
 
-.errorMSG {
-    display: none;
-    color: red;
-}
-
 button:disabled{
     background-color: red;
-}
-
-:invalid ~ .errorMSG {
-    display: block;
-}
-
-.errorMSG i{
-    margin-left: 10px;
 }
 
 .submit{
