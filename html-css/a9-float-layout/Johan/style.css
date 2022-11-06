@@ -8,9 +8,6 @@ body{
     background-color: gray;
     margin: 0;
     height: 100vh;
-    background: url(images/main-back2.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
     font-family: 'Poppins', sans-serif;
     color: #fff;
 }
@@ -19,10 +16,10 @@ body{
     background-color: #E14D2A;
 }
 
-aside{
+nav{
     width: 25%;
     height: 100vh;
-    backdrop-filter: blur(50px);
+    background-color: #682a25;
     float: left;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     text-align: left;
@@ -32,6 +29,9 @@ main{
     width: 75%;
     height: 100vh;
     float: right;
+    background: url(images/main-back2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 h1{
@@ -81,23 +81,20 @@ button i{
 }
 
 #profile{
-    width: 100%;
-}
-
-#profile b{
-    font-size: 1.2rem;
-    display: block;
-    float: right;
-    margin-top: 50px;
-    margin-right: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 50px auto;
+    flex-direction: row;
 }
 
 #profile img{
-    width: 45px;
-    height: 45px;
-    border-radius: 100%;
-    margin: 40px 10px 40px 70px;
+    width: 50px;
+    height: 50px;
     object-fit: cover;
+    border-radius: 50%;
+    margin-right: 30px;
 }
 
 ul{
@@ -126,7 +123,7 @@ li i{
     margin-right: 30px;
 }
 
-body > aside > hr{
+body > nav > hr{
     filter: brightness(50%);
 }
 
