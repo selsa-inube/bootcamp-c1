@@ -42,18 +42,13 @@ main {
   margin-bottom: 20px;
 }
 
-.date div:hover {
+.date p:hover {
   color: #17202a;
   font-weight: 700;
 }
 
-.date div:first-of-type,
-.date div:last-of-type {
+.date i {
   margin: auto;
-}
-
-.date div:first-of-type i,
-.date div:last-of-type i {
   font-size: 34px;
   background-color: #eaecee;
   padding: 2px;
@@ -61,8 +56,7 @@ main {
   border-radius: 50px;
 }
 
-.date div:first-of-type i:hover,
-.date div:last-of-type i:hover {
+.date i:hover {
   background-color: #17202a;
   color: #fbfcfc;
 }
@@ -126,6 +120,16 @@ strong {
   z-index: 1;
 }
 
+.card {
+  margin: 4px 7px;
+  padding: 3px 2px;
+  height: 95%;
+  border-radius: 10px;
+  text-align: start;
+  position: relative;
+  z-index: 1;
+}
+
 h6 {
   font-size: 16px;
   margin-top: 15px;
@@ -136,11 +140,9 @@ h6 {
 }
 
 .calendar .meet:hover {
-  height: 190%;
-  width: 150%;
   position: relative;
-  top: -50px;
-  left: -30px;
+  top: -15px;
+  left: -15px;
   text-align: center;
   z-index: 2;
 }
@@ -149,20 +151,18 @@ h6 {
   grid-row: auto / span 2;
 }
 
-.calendar .meet-2 .meet:hover {
-  height: 130%;
-  top: -50px;
-  left: -30px;
+.calendar .meet-2 .card:hover {
+  top: -15px;
+  left: -15px;
 }
 
 .calendar .meet-3 {
   grid-row: auto / span 3;
 }
 
-.calendar .meet-3 .meet:hover {
-  height: 130%;
-  top: -50px;
-  left: -30px;
+.calendar .meet-3 .card:hover {
+  top: -15px;
+  left: -15px;
 }
 
 .calendar .color-yellow {
