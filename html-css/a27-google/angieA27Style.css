@@ -1,0 +1,288 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+
+.page {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 12% 1fr 18%;
+
+   grid-template-areas:
+      "nav"
+      "content"
+      "footer";
+   width: 100%;
+   min-height: 100vh;
+}
+
+li {
+   display: inline-block;
+}
+
+ul li a {
+   text-decoration: none;
+}
+
+ul li a:hover {
+   text-decoration: underline;
+}
+
+.menu {
+   grid-area: nav;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: flex-end;
+   align-items: center;
+   width: 100%;
+
+
+}
+
+.menu ul {
+   display: flex;
+   list-style-type: none;
+   align-self: center;
+   justify-content: flex-end;
+   align-items: center;
+   width: 100vmin;
+
+}
+
+.menu li {
+   margin-right: 22px;
+   min-height: 50%;
+
+}
+
+.menu ul li a {
+   color: #9b9b9b;
+   font-size: 14px;
+}
+
+
+.menu img[alt="menu"] {
+   width: 22px;
+}
+
+.menu img[alt="avatar"] {
+   width: 35px;
+   border: none;
+   border-radius: 50%;
+}
+
+
+.content {
+   grid-area: content;
+   width: 100%;
+}
+
+
+.img-logo {
+   display: flex;
+   justify-content: center;
+}
+
+.content img[alt="google"] {
+   max-width: 350px;
+}
+
+.input-content {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.input-content input {
+   box-sizing: border-box;
+   color: #ab4b4b;
+   /* padding: 14px 300px 14px 300px; */
+   padding: 1vw 26vw 1vw 26vw;
+   border-radius: 40px;
+   border: 1px solid rgb(236, 234, 234);
+}
+
+
+.input-icon {
+   display: inline-block;
+   position: absolute;
+   width: 20px;
+   line-height: 24%;
+   filter: grayscale(1) opacity(30%);
+
+}
+
+.input-content img[alt="camera"] {
+   right: 20vw;
+}
+
+.input-content img[alt="search"] {
+   left: 20vw;
+}
+
+.buttons {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   margin-top: 2%;
+}
+
+.buttons button {
+   margin-right: 0.8%;
+   padding: 10px 22px 10px 22px;
+   border: none;
+   border-radius: 5px;
+   background-color: #f8f9fa;
+   color: #807b80;
+   font-size: 1em;
+
+}
+
+.foot {
+   grid-area: footer;
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr 1fr;
+   background-color: #f2f2f2;
+   align-items: center;
+   justify-content: space-around;
+   height: 100%;
+}
+
+.foot span {
+   margin-inline: 5%;
+}
+
+.foot div:nth-of-type(2) {
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+   width: 100%;
+
+}
+
+.foot div:nth-of-type(2) ul:nth-of-type(1) li {
+   margin-right: 2%;
+}
+
+.foot div:nth-of-type(2) ul:nth-of-type(1) {
+   margin-inline: 12%;
+}
+
+.foot div:nth-of-type(2) ul:nth-of-type(2) {
+   display: flex;
+   flex-direction: row;
+   justify-self: flex-end;
+   margin-inline: 20%;
+
+}
+
+.foot div:nth-of-type(2) ul:nth-of-type(2) li {
+   margin-right: 4%;
+}
+
+.foot a,
+.foot span {
+   color: #727981;
+   font-size: 1em
+}
+
+
+@media only screen and (max-width: 1150px) {
+
+   .foot a,
+   .foot span {
+      font-weight: 600;
+      font-size: 0.8em;
+   }
+
+}
+
+@media only screen and (max-width: 850px) {
+
+   .content img[alt="google"] {
+      max-width: 250px;
+   }
+
+   .buttons button {
+      font-size: 0.7em;
+      font-weight: 600;
+   }
+
+
+   .foot {
+      align-items: center;
+      justify-items: center;
+   }
+
+   .foot div:nth-of-type(2) {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+   }
+
+   .foot div:nth-of-type(2) ul:nth-of-type(1),
+   .foot div:nth-of-type(2) ul:nth-of-type(2) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      justify-self: initial;
+   }
+
+   .foot div:nth-of-type(2) ul:nth-of-type(1) {
+      flex-wrap: wrap;
+   }
+
+   .foot div:nth-of-type(2) ul:nth-of-type(1) li,
+   .foot div:nth-of-type(2) ul:nth-of-type(2) li {
+      margin-right: 10%;
+      margin-top: 5px;
+   }
+
+
+}
+
+
+@media only screen and (max-width: 720px) {
+   .menu ul li a {
+      font-size: 0.8em;
+      font-weight: 600;
+   }
+
+   .menu img[alt="menu"] {
+      max-width: 4.7vw;
+   }
+
+   .menu img[alt="avatar"] {
+
+      max-width: 5vw;
+      border: none;
+      border-radius: 50%;
+   }
+
+   .input-icon {
+      max-width: 5vw;
+   }
+
+   .input-content img[alt="camera"] {
+      right: 15vw;
+   }
+
+   .input-content img[alt="search"]{
+      left: 15vw;
+   } 
+}
+
+@media only screen and (max-width: 360px) {
+
+   .menu ul li a,
+   .buttons button,
+   .foot a,
+   .foot span {
+      font-size: 3.5vw;
+
+   }
+
+}
