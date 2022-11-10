@@ -95,17 +95,19 @@ button:active{
 }
 
 
-.menu-date {
+.menu-date span:nth-of-type(1) {
     font-size: 0.9em;
+}
+
+.menu-date span:nth-of-type(2) {
+    font-size: 0.7em;
 }
 
 .menu-date span {
     display: block;
-}
-
-.menu-date span:nth-of-type(1) {
     font-weight: bolder;
 }
+
 
 .menu ul {
     margin: 0px 15px 0px 35px;
@@ -117,14 +119,16 @@ button:active{
 }
 
 .menu ul li a,
-.submenu ul li a {
+.submenu ul li a,
+.submenu-two ul li a{
     color: #8d8b8b;
     font-size: 13px;
     font-weight: 800;
 
 }
 
-.menu ul li a:hover {
+.menu ul li a:hover,
+.submenu-two ul li a:hover {
     color: #252323;
 }
 
@@ -149,20 +153,22 @@ button:active{
     grid-area: content;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 50px 1fr;
+    grid-template-rows: 50px 1fr 150px;
     grid-template-areas: 
     "submenu submenu"
-    "sections aside";
+    "sections aside"
+    "submenu2 submenu2";
     width: 100%;
-    margin-top: 2%;
+    
 
 }
 
-.submenu {
+.submenu{
     grid-area: submenu;
     display: grid;
     grid-template-columns: 130px 1fr;
     align-items: center;
+    height: 50px;
 }
 
 .submenu h2 {
@@ -188,6 +194,7 @@ button:active{
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-top: 3%;
+    margin-bottom: 20px;
 }
 
 .color-text {
@@ -324,6 +331,93 @@ button:active{
     margin-left: 12px;
  }
 
+ .content-section-three{
+   grid-area: submenu2 ; 
+    border-top: 2px solid #edebeb;
+    display: grid;
+    grid-column: span 2/3;
+    grid-row: 3/3;
+
+ }
+
+ .submenu-two{
+    display: grid;
+    grid-template-columns: 150px 1fr 200px;
+    align-items: center;
+    height: 65px;
+ }
+
+ .submenu-two ul {
+    margin: 0px 15px 0px 35px;
+    justify-content: flex-start;
+}
+
+.submenu-two li {
+    margin-right: 20px;
+}
+
+.submenu-two-full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.submenu-two-full span{
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+.submenu-two-full img[alt="arrow"] {
+    width: 20px;
+    height: 20px;
+
+}
+
+.content-cards{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.card{
+    width: 210px;
+    height: 90px;
+    margin-right: 20px;
+    line-height: 20px;
+ 
+}
+
+.card p, 
+.card span{
+    color: #ffffff;
+    font-family: sans-serif;
+    margin: 8px 20px 0px 10px;
+}
+
+.card p{
+    font-size: 0.8em;
+}
+
+.card span{
+    font-size: 0.7em;
+}
+
+.card p:nth-of-type(1),
+.card span:nth-of-type(2){
+    font-weight: 600;
+}
+
+.card-color-g {
+    background-color: #5c8d5d ;
+}
+
+.card-color-b {
+    background-color: #000000 ;
+}
+
+.card-color-r {
+    background-color: #c9495b ;
+}
 
 
 
