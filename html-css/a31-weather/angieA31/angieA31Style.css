@@ -23,7 +23,8 @@
 
     .content-color-b {
         margin: 1%;
-        background-color: #1377f5;
+        background-color: rgb(19, 119, 245);
+        background: linear-gradient(to top, rgb(19, 119, 245), rgb(21, 191, 248));
         border-bottom-left-radius: 12%;
         border-bottom-right-radius: 12%;
     }
