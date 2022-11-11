@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    display: grid;
+    background-color: black;
+
+}
+
+.content-blue {
+    height: 800px;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    background-color: rgb(17, 118, 243);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin: 15px 40px 0px 40px;
+    justify-content: space-between;
+}
+
+
+.text-title {
+    font-size: 50px;
+    color: #ffffff;
+}
+
+i {
+    color: #ffffff;
+}
+
+.fa-ellipsis-vertical {
+    font-size: 30px;
+}
+
+img[alt="four_points"] {
+    width: 15px;
+    cursor: pointer;
+}
+
+.circle {
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-self: center;
+}
+
+.text-color-two {
+    color: #a7caf3;
+}
+
+.text-color-three {
+    color: #95989c;
+}
+
+.content-one {
+    height: 720px;
+    display: grid;
+    justify-items: center;
+}
+
+.content-one button {
+    display: flex;
+    cursor: pointer;
+    font-size: 10px;
+    align-items: center;
+    justify-items: center;
+    border-radius: 50px;
+    padding: 2px 8px 2px 8px;
+    margin: 5px 0px 10px 0px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+}
+
+.fa-cloud-bolt {
+    margin-top: 20px;
+    font-size: 120px;
+}
+
+.content-date {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-one p:nth-of-type(1) {
+    align-items: center;
+    font-size: 8em;
+}
+
+.text-color-title {
+    margin-top: 50px;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.content-climate {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.dates-climate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-today {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 50px 10px 50px;
+}
+
+.link-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: start;
+    text-decoration: none;
+}
+
+.link-text:hover {
+    color: #8fb7e9;
+    font-size: 3vw;
+}
+
+.content-cards {
+    display: flex;
+}
+
+.card {
+    margin: 5%;
+    width: 250px;
+    display: flex;
+    height: 150px;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 20px;
+    flex-direction: column;
+    border: 2px solid gray;
+}
+
+.fa-cloud-sun-rain {
+    font-size: 150px;
+}
+
+.text-one {
+    font-size: 18vw;
+}
+
+.text-two {
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.text-three {
+    font-size: 20px;
+}
+
+.text-four {
+    font-size: 30px;
+}
+
+.text-five {
+    font-size: 200px;
+}
+
+.dates-climate img[alt="water"] {
+    width: 22px;
+    margin: 10px 0px 5px 0px;
+}
+
+.content-section-three {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3vh;
+    justify-items: center;
+}
+
+.content-date-two {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.content-date-two-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 50px;
+}
+
+.text-number {
+    font-size: 100px;
+    font-weight: 300;
+    color: #6ba8f1;
+}
+
+.content-section-four {
+    margin: 2vh 8vw 2vh 8vw;
+}
+
+.content-climate-week {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-climate-week span,
+.content-climate-week p {
+    font-size: 30px;
+}
