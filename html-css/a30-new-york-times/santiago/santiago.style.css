@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px 20px 0px 20px;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    display: inline-flex;
+    align-items: center;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header {
+    height: 75px;
+    display: grid;
+    align-items: center;
+    border-bottom: 2px solid #ebe9e9;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+img[alt="logo"] {
+    margin-left: 200px;
+}
+
+header .buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+header button {
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+header .btn-one {
+    border: none;
+    margin-right: 20px;
+    background-color: transparent;
+}
+
+header .btn-two {
+    padding: 10px 30px;
+    background-color: white;
+    border: 2px solid #a7a3a3;
+}
+
+.date {
+    display: inline;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 16px;
+}
+
+nav ul {
+    margin-left: 30px;
+}
+
+nav li {
+    margin-right: 50px;
+}
+
+nav ul li a,
+.list ul li a {
+    font-size: 14px;
+    font-weight: 700;
+    color: #8d8b8b;
+
+}
+
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+}
+
+.icon i {
+    color: #ffffff;
+}
+
+main {
+    display: grid;
+    grid-template-areas:
+        "list list"
+        "sections aside";
+    margin: 30px 0px 0px 0px;
+    grid-template-columns: 3fr 1fr;
+    border-bottom: 2px solid #edebeb;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+
+
+.list ul li {
+    margin-right: 30px;
+}
+
+.content-one {
+    display: grid;
+    margin: 30px 0px;
+    grid-area: sections;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.section img {
+    width: 250px;
+}
+
+
+.section h3 {
+    font-size: 1.7em;
+    line-height: 40px;
+}
+
+.section p {
+    margin: 20px 0px 20px 0px;
+    font-size: 14px;
+}
+
+.btn button {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 0.6em;
+    font-weight: 600;
+    padding: 5px 10px 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.aside-right p,
+.aside-right h3 {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.aside-right {
+    grid-area: aside;
+    padding: 0px 0px 0px 10px;
+}
+
+.aside-right article {
+    display: flex;
+}
+
+.img-informative {
+    width: 100px;
+    height: 100px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.red {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    background: red;
+}
+
+.green {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    background: green;
+}
+
+.black {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    background: #000;
+}
