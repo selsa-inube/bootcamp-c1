@@ -215,19 +215,21 @@ h3 {
 }
 
 .fast-forward {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-rows: 5% 30% 30% 28% 7%;
 }
 
 .fast-forward p {
-  width: 60%;
+  width: 85%;
   font-size: 0.75em;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 600;
+  margin: auto 0;
 }
 
 .fast-forward span {
   display: block;
+  width: 90%;
   font-size: 0.95em;
   font-weight: 600;
   margin: 0.3em 0;
@@ -238,7 +240,12 @@ h3 {
 .fast-forward img {
   height: 80px;
   width: 80px;
-  margin-left: 2.4em;
+  margin: auto;
+}
+
+.order {
+  display: grid;
+  grid-template-columns: 70% 30%;
 }
 
 footer {
@@ -287,6 +294,37 @@ h5 {
   height: 90%;
   width: 85%;
   margin: 2px auto;
+}
+
+.indicator:hover {
+  width: 102%;
+  text-align: center;
+}
+
+.indicator h6 {
+  color: #FFFFFF;
+  font-size: 1em;
+  margin: 0.5em;
+  font-weight: 500;
+}
+
+.action-var {
+  font-size: 0.78em;
+  margin: 0 1em;
+  font-weight: 400;
+}
+
+.indicator p {
+  margin: 1em;
+  color: #FFFFFF;  
+  font-weight: 200; 
+}
+
+.indicator p span {
+  display: block;
+  margin: 1em 0;
+  font-size: 0.8em;
+  font-weight: 400;
 }
 
 .green {
