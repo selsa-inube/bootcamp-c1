@@ -16,6 +16,8 @@ body {
 header {
     display: grid;
     grid-template-columns: 6% 90% 1fr;
+    margin: 0 auto;
+    width: 99vw;
     align-content: center;
     z-index: 1;
 }
@@ -71,6 +73,8 @@ header img {
 main {
     display: grid;
     grid-template-columns: 6% 94%;
+    margin: 0 auto;
+    width: 99vw;
     z-index: 1;
 }
 
