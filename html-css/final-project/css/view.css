@@ -115,7 +115,7 @@ section i {
 
 @media only screen and (min-width: 501px) and (max-width: 800px){
     body {
-        height: 235vh;
+        height: 245vh;
         background-size:350%;
         background-position: top;
     }
@@ -202,7 +202,7 @@ section i {
 
 @media only screen and (max-width: 500px) {
     body {
-        height: 215vh;
+        height: 230vh;
         background-size:350%;
         background-position: top;
     }
