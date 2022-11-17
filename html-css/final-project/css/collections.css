@@ -1,0 +1,199 @@
+body {
+    height: 100vh !important;
+}
+
+.one-btn {
+    cursor: pointer;
+    padding: 8px 20px;
+    border-radius: 20px;
+    background-color: #facd66;
+}
+
+.two-btn {
+    cursor: pointer;
+    color: #515452;
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 1px solid #515452;
+    background-color: transparent;
+}
+
+.images {
+    position: relative;
+    display: flex;
+    margin: 20px 0 0 0;
+}
+
+.one-image {
+    width: 200px;
+    height: 200px;
+}
+
+.two-image {
+    width: 200px;
+    height: 200px;
+    margin: 0 0 0 20px;
+}
+
+.three-image {
+    width: 200px;
+    height: 200px;
+    margin: 0 0 0 20px;
+}
+
+.four-image {
+    width: 200px;
+    height: 200px;
+    margin: 0 0 0 20px;
+}
+
+.images img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.text-one {
+    position: absolute;
+    color: #FFFFFF;
+    bottom: 22px;
+    left: 20px;
+}
+
+.text-two {
+    position: absolute;
+    color: #FFFFFF;
+    bottom: 22px;
+    left: 240px;
+}
+
+.text-three {
+    position: absolute;
+    color: #FFFFFF;
+    bottom: 22px;
+    left: 450px;
+}
+
+.text-four {
+    position: absolute;
+    color: #FFFFFF;
+    bottom: 22px;
+    left: 680px;
+}
+
+span {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 0.8em;
+}
+
+.bx-play-circle {
+    display: none;
+}
+
+@media only screen and (max-width: 425px) {
+
+    .buttons-images {
+        margin: 20px 0 0 0;
+    }
+
+    .one-btn {
+        padding: 10px 50px;
+    }
+
+    .two-btn {
+        padding: 10px 80px;
+    }
+
+    .images {
+        position: relative;
+        display: inline-block;
+        margin: 5px 0 0 0;
+    }
+
+    .one-image {
+        width: 370px;
+        height: 300px;
+        margin: 10px 0 0 0;
+    }
+
+    .two-image {
+        width: 370px;
+        height: 300px;
+        margin: 10px 0 0 0;
+    }
+
+    .three-image {
+        width: 370px;
+        height: 300px;
+        margin: 10px 0 0 0;
+    }
+
+    .four-image {
+        width: 370px;
+        height: 300px;
+        margin: 10px 0 0 0;
+    }
+
+    .text-one {
+        position: absolute;
+        color: #FFFFFF;
+        top: 220px;
+        left: 20px;
+    }
+
+    .text-two {
+        position: absolute;
+        color: #FFFFFF;
+        top: 520px;
+        left: 20px;
+    }
+
+    .text-three {
+        position: absolute;
+        color: #FFFFFF;
+        top: 840px;
+        left: 20px;
+    }
+
+    .text-four {
+        position: absolute;
+        color: #FFFFFF;
+        top: 1120px;
+        left: 20px;
+    }
+
+    .one-image i {
+        position: absolute;
+        top: 227px;
+        right: 30px;
+        color: #facd66;
+        font-size: 2.5em;
+    }
+
+    .two-image i {
+        position: absolute;
+        top: 527px;
+        right: 30px;
+        color: #facd66;
+        font-size: 2.5em;
+    }
+
+    .three-image i {
+        position: absolute;
+        top: 847px;
+        right: 30px;
+        color: #facd66;
+        font-size: 2.5em;
+    }
+
+    .four-image i {
+        position: absolute;
+        top: 1127px;
+        right: 30px;
+        color: #facd66;
+        font-size: 2.5em;
+    }
+}

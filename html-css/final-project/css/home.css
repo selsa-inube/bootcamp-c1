@@ -1,0 +1,322 @@
+.color-w {
+    color: #ffffff;
+}
+
+.color-g {
+    color: #8c8e8f;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 110vmin 1fr;
+    grid-template-rows: 58vmin 1fr 1fr;
+    grid-template-areas:
+        "album charts"
+        "releases releases"
+        "popular popular";
+    width: 90%;
+    height: 100vh;
+}
+
+.album {
+    grid-area: album;
+    background-color: #609eaf;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 97%;
+    border-radius: 30px;
+    margin-bottom: 5%;
+}
+
+.album-img-content img[alt="weeknd"] {
+    max-width: 34.5vmin;
+}
+
+.album-content-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    left: -15%;
+}
+
+.album-content-text h2 {
+    font-size: 2.2em;
+    margin-bottom: 3%;
+}
+
+.album-content-text span {
+    font-size: 0.7em;
+}
+
+.album-content-text p {
+    font-size: 0.9em;
+}
+
+.album-content-likes {
+    align-self: center;
+}
+
+.album-content-likes img {
+    width: 3vmin;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.album-content-likes img:nth-of-type(1) {
+    z-index: 1;
+    left: 23vmin;
+}
+
+.album-content-likes img:nth-of-type(2) {
+    z-index: 2;
+    left: 24.5vmin;
+}
+
+.album-content-likes img:nth-of-type(3) {
+    z-index: 3;
+    left: 26vmin;
+}
+
+.album-content-likes img:nth-of-type(4) {
+    width: 3.2vmin;
+    height: 3vmin;
+    z-index: 4;
+    left: 27.5vmin;
+}
+
+.album-content-likes img:nth-of-type(5) {
+    z-index: 5;
+    left: 29vmin;
+}
+
+.album-content-text i {
+    color: white;
+}
+
+.top-charts {
+    grid-area: charts;
+}
+
+.top-charts h2 {
+    margin-bottom: 4%;
+}
+
+.top-charts ul {
+    list-style-type: none;
+}
+
+.top-charts li {
+    width: 67vmin;
+    height: 12vmin;
+    background-color: #1a1e1f;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+    border-radius: 20px;
+}
+
+.top-charts li:active {
+    background-color: #56585a;
+}
+
+.chart {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    width: 92%;
+}
+
+.chart img {
+    max-width: 5vw;
+    max-height: 10vh;
+    border-radius: 15px;
+}
+
+.chart div:nth-of-type(1) {
+    display: flex;
+    flex-direction: row;
+}
+
+.chart div:nth-of-type(1) div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 3%;
+    line-height: 20px;
+}
+
+.chart div:nth-of-type(1) span:nth-of-type(1) {
+    font-size: 0.9em;
+}
+
+.chart div:nth-of-type(1) span:nth-of-type(2),
+.chart div:nth-of-type(1) span:nth-of-type(3) {
+    font-size: 0.7em;
+}
+
+.chart div:nth-of-type(2) {
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.chart i {
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #facd66;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #414546;
+    border-radius: 50%;
+}
+
+.new-releases {
+    grid-area: releases;
+    margin-bottom: 4%;
+}
+
+.releases-img-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.new-releases h2,
+.popular h2 {
+    font-size: 1.3em;
+    margin-bottom: 1.5%;
+}
+
+.releases-img-content figure,
+.popular-img-content figure {
+    margin-right: 3%;
+    cursor: pointer;
+}
+
+.releases-img-content img,
+.popular-img-content img {
+    max-width: 23vw;
+    max-height: 22vh;
+    border-radius: 30px;
+}
+
+.releases-img-content figcaption,
+.popular-img-content figcaption {
+    color: #ababab;
+    font-size: 0.7em;
+}
+
+.popular {
+    grid-area: popular;
+}
+
+.popular-img-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.popular-img-content figure {
+    margin-right: 3%;
+}
+
+@media only screen and (max-width: 800px) {
+    .content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 80vh 1fr 1fr 1fr;
+        grid-template-areas:
+            "album"
+            "charts"
+            "releases"
+            "popular";
+        width: 100%;
+        margin: 4%;
+    }
+
+    .album {
+        max-width: 100%;
+    }
+
+    .album-img-content img[alt="weeknd"] {
+        max-width: 550px;
+        max-height: 100%;
+    }
+
+    .album-content-text h2 {
+        font-size: 2.2em;
+        margin-bottom: 3%;
+    }
+
+    .album-content-text span {
+        font-size: 0.7em;
+    }
+
+    .album-content-text p {
+        font-size: 0.9em;
+    }
+
+    .top-charts ul {
+        display: inline-flex;
+    }
+
+    .top-charts li {
+        margin-right: 4%;
+        width: 80vw;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .chart {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        align-items: start;
+        width: 95%;
+    }
+
+    .top-charts ul li:nth-of-type(3) {
+        display: none;
+    }
+
+    .chart img {
+        max-width: 40vw;
+        max-height: 30vh;
+   }
+
+    .chart div:nth-of-type(1) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .chart div:nth-of-type(1) div {
+        line-height: 35px;
+    }
+
+    .chart div:nth-of-type(1) span:nth-of-type(1) {
+        font-size: 1.5em;
+        margin-top: 3%;
+    }
+    
+    .chart div:nth-of-type(1) span:nth-of-type(2),
+    .chart div:nth-of-type(1) span:nth-of-type(3) {
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .album-img-content img[alt="weeknd"] {
+        display: none;
+    }
+
+    .album-content-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        left: 0;
+    }
+}
