@@ -1,239 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/home.css" />
-    <title>Music Player</title>
-  </head>
 
-  <body>
-    <header>
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet" />
+   <link rel="stylesheet" href="./css/styles.css" />
+   <link rel="stylesheet" href="./css/home.css" />
+   <title>Music Player</title>
+</head>
+
+<body>
+   <header>
       <img src="./images/logo-company.png" alt="logo-company" />
       <div class="search">
-        <i class="bx bx-search"></i>
-        <input placeholder="Search" />
+         <i class="bx bx-search"></i>
+         <input placeholder="Search" />
       </div>
+
       <div class="lateral-menu">
-        <input type="checkbox" id="check" />
-        <label for="check" class="checkbtn">
-          <i class="bx bx-menu"></i>
-        </label>
+         <input type="radio" id="check" name="tab-group-1" />
+         <label for="check" class="checkbtn">
+            <i class="bx bx-menu"></i>
+         </label>
+         <div class="tab close-tab">
+            <input type="radio" id="tab-close" name="tab-group-1" />
+            <label for="tab-close" class="checkbtn"></label>
+         </div>
+
+         <div class="content">
+            <ul>
+               <li>
+                  <a href="#"><i class="bx bxs-home"></i><span class="titles-item-menu">Home</span></a>
+               </li>
+               <li>
+                  <a href="./collections.html"><i class="bx bxs-playlist"></i><span class="titles-item-menu">My
+                        collections</span></a>
+               </li>
+               <li>
+                  <a href="#"><i class="bx bxs-radio"></i><span class="titles-item-menu">Radio</span></a>
+               </li>
+               <li>
+                  <a href="#"><i class="bx bx-film"></i><span class="titles-item-menu">Music videos</span></a>
+               </li>
+               <li>
+                  <a href="#"><i class="bx bxs-user"></i><span class="titles-item-menu">Profile</span></a>
+               </li>
+               <li>
+                  <a href="#"><i class="bx bxs-door-open"></i><span class="titles-item-menu">Log out</span></a>
+               </li>
+            </ul>
+         </div>
       </div>
-    </header>
-    <main>
+   </header>
+
+   <main>
       <nav>
-        <ul>
-          <li>
-            <a href="#"><i class="bx bxs-home"></i></a>
-          </li>
-          <li>
-            <a href="./collections.html"><i class="bx bxs-playlist"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="bx bxs-radio"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="bx bx-film"></i></a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="#"><i class="bx bxs-user"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="bx bxs-door-open"></i></a>
-          </li>
-        </ul>
+         <ul class="menu-desktop">
+            <li>
+               <a href="#"><i class="bx bxs-home"></i></a>
+            </li>
+            <li>
+               <a href="./collections.html"><i class="bx bxs-playlist"></i></a>
+            </li>
+            <li>
+               <a href="#"><i class="bx bxs-radio"></i></a>
+            </li>
+            <li>
+               <a href="#"><i class="bx bx-film"></i></a>
+            </li>
+         </ul>
+         <ul class="menu-desktop">
+            <li>
+               <a href="#"><i class="bx bxs-user"></i></a>
+            </li>
+            <li>
+               <a href="#"><i class="bx bxs-door-open"></i></a>
+            </li>
+         </ul>
       </nav>
 
-      <div class="content">
-        <section class="album">
-          <div class="album-content-text">
-            <span class="color-w">Currated playlist</span>
+      <div class="content-main">
+         <section class="album">
+            <div class="album-content-text">
+               <span class="color-w">Currated playlist</span>
 
-            <div>
-              <h2 class="color-w">R &amp; B Hits</h2>
-              <p class="color-w">
-                All mine, Lie again, Petty call me everyday,<br />
-                Out of time, No love, Bad habit,<br />
-                and so much more
-              </p>
+               <div>
+                  <h2 class="color-w">R &amp; B Hits</h2>
+                  <p class="color-w">
+                     All mine, Lie again, Petty call me everyday,<br />
+                     Out of time, No love, Bad habit,<br />
+                     and so much more
+                  </p>
+               </div>
+
+               <div class="album-content-likes">
+                  <div>
+                     <img src="images/person5.jpg" alt="person5" />
+                     <img src="images/person4.jpg" alt="person4" />
+                     <img src="images/person2.jpg" alt="person3" />
+                     <img src="images/person1.jpg" alt="person1" />
+                     <img src="images/person3.jpg" alt="person2" />
+                  </div>
+                  <div>
+                     <i class="bx bxs-heart"></i>
+                     <span class="color-w">33K Likes</span>
+                  </div>
+               </div>
             </div>
+            <figure class="album-img-content">
+               <img src="images/weeknd.png" alt="weeknd" />
+            </figure>
+         </section>
 
-            <div class="album-content-likes">
-              <div>
-                <img src="images/person5.jpg" alt="person5" />
-                <img src="images/person4.jpg" alt="person4" />
-                <img src="images/person2.jpg" alt="person3" />
-                <img src="images/person1.jpg" alt="person1" />
-                <img src="images/person3.jpg" alt="person2" />
-              </div>
-              <div>
-                <i class="bx bxs-heart"></i>
-                <span class="color-w">33K Likes</span>
-              </div>
+         <section class="top-charts">
+            <h2 class="color-w">Top charts</h2>
+            <ul>
+               <li>
+                  <a href="./view.html" class="chart">
+                     <div>
+                        <img src="images/weekly.jpg" alt="tomorrow" />
+                        <div>
+                           <span class="color-w">Tomorrow&#180;s tunes</span>
+                           <span class="color-g">Obi Datti</span>
+                           <span class="color-w">2:01:25</span>
+                        </div>
+                     </div>
+                     <div>
+                        <i class="bx bx-heart"></i>
+                     </div>
+                  </a>
+               </li>
+               
+               <li>
+                  <a href="#" class="chart">
+                     <div>
+                        <img src="images/reggae.jpg" alt="reggae" />
+                        <div>
+                           <span class="color-w">Reggae blues</span>
+                           <span class="color-g">Dj YK mule</span>
+                           <span class="color-w">1:02:42</span>
+                        </div>
+                     </div>
+                     <div>
+                        <i class="bx bx-heart"></i>
+                     </div>
+                  </a>
+               </li>
+               <li>
+                  <a href="#" class="chart">
+                     <div>
+                        <img src="images/age-80.jpg" alt="age-80" />
+                        <div>
+                           <span class="color-w">Golden age of 80s</span>
+                           <span class="color-g">Sean swadder</span>
+                           <span class="color-w">2:34:45</span>
+                        </div>
+                     </div>
+                     <div>
+                        <i class="bx bx-heart"></i>
+                     </div>
+                  </a>
+               </li>
+            </ul>
+         </section>
+
+         <section class="new-releases">
+            <h2 class="color-w">New releases.</h2>
+
+            <div class="releases-img-content">
+               <figure>
+                  <img src="images/esta-buenisimo.jpg" alt="esta-buenisimo" />
+                  <figcaption>Esta buenisimo</figcaption>
+               </figure>
+               <figure>
+                  <img src="images/lejos-cielo.png" alt="lejos-cielo" />
+                  <figcaption>Lejos del cielo</figcaption>
+               </figure>
+               <figure>
+                  <img src="images/extasis.jpg" alt="extasis" />
+                  <figcaption>Extasis</figcaption>
+               </figure>
+               <figure>
+                  <img src="images/never-gonna.jpg" alt="never-gonna" />
+                  <figcaption>Never gonna</figcaption>
+               </figure>
+               <figure>
+                  <img src="images/domingo.png" alt="domingo-de-bote" />
+                  <figcaption>domingo de bote</figcaption>
+               </figure>
+               <figure>
+                  <img src="images/muevelo.jpg" alt="muevelo" />
+                  <figcaption>Muevelo</figcaption>
+               </figure>
             </div>
-          </div>
-          <figure class="album-img-content">
-            <img src="images/weeknd.png" alt="weeknd" />
-          </figure>
-        </section>
+         </section>
 
-        <section class="top-charts">
-          <h2 class="color-w">Top charts</h2>
-          <ul>
-            <li>
-              <a href="./view.html" class="chart">
-                <div>
-                  <img src="images/weekly.jpg" alt="tomorrow" />
-                  <div>
-                    <span class="color-w">Tomorrow&#180;s tunes</span>
-                    <span class="color-g">Obi Datti</span>
-                    <span class="color-w">2:01:25</span>
-                  </div>
-                </div>
-                <div>
-                  <i class="bx bx-heart"></i>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="chart">
-                <div>
-                  <img src="images/age-80.jpg" alt="age-80" />
-                  <div>
-                    <span class="color-w">Golden age of 80s</span>
-                    <span class="color-g">Sean swadder</span>
-                    <span class="color-w">2:34:45</span>
-                  </div>
-                </div>
-                <div>
-                  <i class="bx bx-heart"></i>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="chart">
-                <div>
-                  <img src="images/reggae.jpg" alt="reggae" />
-                  <div>
-                    <span class="color-w">Reggae blues</span>
-                    <span class="color-g">Dj YK mule</span>
-                    <span class="color-w">1:02:42</span>
-                  </div>
-                </div>
-                <div>
-                  <i class="bx bx-heart"></i>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </section>
+         <section class="popular">
+            <h2 class="color-w">Popular</h2>
 
-        <section class="new-releases">
-          <h2 class="color-w">New releases.</h2>
-
-          <div class="releases-img-content">
-            <figure>
-              <img src="images/Captura.PNG" alt="esta-buenisimo" />
-              <figcaption>Esta buenisimo</figcaption>
-            </figure>
-            <figure>
-              <img src="images/lejos-cielo.png" alt="lejos-cielo" />
-              <figcaption>Lejos del cielo</figcaption>
-            </figure>
-            <figure>
-              <img src="images/extasis.jpg" alt="extasis" />
-              <figcaption>Extasis</figcaption>
-            </figure>
-            <figure>
-              <img src="images/never-gonna.jpg" alt="never-gonna" />
-              <figcaption>Never gonna</figcaption>
-            </figure>
-            <figure>
-              <img src="images/domingo.png" alt="domingo-de-bote" />
-              <figcaption>domingo de bote</figcaption>
-            </figure>
-            <figure>
-              <img src="images/muevelo.jpg" alt="muevelo" />
-              <figcaption>Muevelo</figcaption>
-            </figure>
-            <figure>
-              <img src="images/como-yo.jpg" alt="como-yo" />
-              <figcaption>como yo</figcaption>
-            </figure>
-          </div>
-        </section>
-
-        <section class="popular">
-          <h2 class="color-w">Popular</h2>
-
-          <div class="popular-img-content">
-            <figure>
-              <img src="images/monotonia-ozuna-shakira.jpg" alt="monotonia" />
-              <figcaption>Monotonia</figcaption>
-            </figure>
-            <figure>
-              <img src="images/despecha.jpg" alt="despecha" />
-              <figcaption>Despecha</figcaption>
-            </figure>
-            <figure>
-              <img src="images/bachata.jpg" alt="la-bachata" />
-              <figcaption>la bachata</figcaption>
-            </figure>
-            <figure>
-              <img src="images/te-Felicito.jpg" alt="te-Felicito" />
-              <figcaption>MTe felicito</figcaption>
-            </figure>
-            <figure>
-              <img src="images/hey-mor.png" alt="hey-mor" />
-              <figcaption>Hey mor</figcaption>
-            </figure>
-            <figure>
-              <img src="images/toke2.jpg" alt="toke" />
-              <figcaption>Toke</figcaption>
-            </figure>
-            <figure>
-              <img src="images/junio.png" alt="junio" />
-              <figcaption>Junior</figcaption>
-            </figure>
-          </div>
-        </section>
+            <div class="popular-img-content">
+               <figure>
+                  <img src="images/monotonia-ozuna-shakira.jpg" alt="monotonia" />
+                  <figcaption>Monotonia</figcaption>
+               </figure>
+               <figure>
+                  <img src="images/despecha.jpg" alt="despecha" />
+                  <figcaption>Despecha</figcaption>
+               </figure>
+               <figure>
+                  <img src="images/bachata.jpg" alt="la-bachata" />
+                  <figcaption>la bachata</figcaption>
+               </figure>
+               <figure>
+                  <img src="images/te-Felicito.jpg" alt="te-Felicito" />
+                  <figcaption>MTe felicito</figcaption>
+               </figure>
+               <figure>
+                  <img src="images/hey-mor.png" alt="hey-mor" />
+                  <figcaption>Hey mor</figcaption>
+               </figure>
+               <figure>
+                  <img src="images/toke2.jpg" alt="toke" />
+                  <figcaption>Toke</figcaption>
+               </figure>
+            </div>
+         </section>
       </div>
-    </main>
+   </main>
 
-    <footer>
+   <footer>
       <div class="cover">
-        <img src="./images/Nathy-peluso.png" />
-        <h5>Esta buenísimo <span>Nathy Peluso</span></h5>
-      </div>
-      <div class="reproductor">
-        <ul>
-          <li><i class="bx bx-shuffle"></i></li>
-          <li><i class="bx bx-skip-previous"></i></li>
-          <li><i class='bx bx-play'></i></li>
-          <li><i class="bx bx-skip-next"></i></li>
-          <li><i class="bx bx-sync"></i></li>
-        </ul>
-        <div class="line-reproduction">
-          <input type="range" value="25" min="0" max="100" step="1">
-        </div>
-      </div>
-      <div class="volume">
-        <i class="bx bxs-volume-full"></i>
-        <input type="range" value="70" min="0" max="100" step="1" >
-      </div>
-      <div class="reproductor-mobile">
-        <i class='bx bx-play'></i>
-        <i class='bx bx-skip-next'></i>
-      </div>
-    </footer>
-  </body>
+         <img src="./images/Nathy-peluso.png" />
+         <h5>Esta buenísimo <span>Nathy Peluso</span></h5>
+       </div>
+       <div class="reproductor">
+         <ul>
+           <li><i class="bx bx-shuffle"></i></li>
+           <li><i class="bx bx-skip-previous"></i></li>
+           <li><i class='bx bx-play'></i></li>
+           <li><i class="bx bx-skip-next"></i></li>
+           <li><i class="bx bx-sync"></i></li>
+         </ul>
+         <div class="line-reproduction">
+           <input type="range" value="25" min="0" max="100" step="1">
+         </div>
+       </div>
+       <div class="volume">
+         <i class="bx bxs-volume-full"></i>
+         <input type="range" value="70" min="0" max="100" step="1" >
+       </div>
+       <div class="reproductor-mobile">
+         <i class='bx bx-play'></i>
+         <i class='bx bx-skip-next'></i>
+       </div>
+   </footer>
+</body>
+
 </html>

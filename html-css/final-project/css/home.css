@@ -6,16 +6,21 @@
     color: #8c8e8f;
 }
 
-.content {
+.content-main {
     display: grid;
-    grid-template-columns: 110vmin 1fr;
-    grid-template-rows: 58vmin 1fr 1fr;
+    grid-template-columns: 100vmin 1fr;
+    grid-template-rows: 57vh 1fr 1fr;
     grid-template-areas:
         "album charts"
         "releases releases"
         "popular popular";
-    width: 90%;
+    width: 90vw;
     height: 100vh;
+    margin-left: 1em;
+}
+
+.content-main h2 {
+    font-size: 1.3em;
 }
 
 .album {
@@ -26,7 +31,7 @@
     justify-content: space-around;
     width: 97%;
     border-radius: 30px;
-    margin-bottom: 5%;
+    margin-bottom: 2em;
 }
 
 .album-img-content img[alt="weeknd"] {
@@ -37,12 +42,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    left: -15%;
+    margin: 0 1em 0 1.5em;
+
 }
 
 .album-content-text h2 {
     font-size: 2.2em;
-    margin-bottom: 3%;
+    margin-bottom: 5px;
 }
 
 .album-content-text span {
@@ -55,39 +61,43 @@
 
 .album-content-likes {
     align-self: center;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 0.4fr 1fr;
+    width: 100%;
 }
 
 .album-content-likes img {
-    width: 3vmin;
+    max-width: 20px;
     border-radius: 50%;
     position: absolute;
 }
 
 .album-content-likes img:nth-of-type(1) {
     z-index: 1;
-    left: 23vmin;
+
 }
 
 .album-content-likes img:nth-of-type(2) {
     z-index: 2;
-    left: 24.5vmin;
+    margin-left: 0.7em;
 }
 
 .album-content-likes img:nth-of-type(3) {
     z-index: 3;
-    left: 26vmin;
+    margin-left: 1.4em;
 }
 
 .album-content-likes img:nth-of-type(4) {
-    width: 3.2vmin;
-    height: 3vmin;
+    max-width: 28px;
     z-index: 4;
-    left: 27.5vmin;
+    margin-left: 2.2em;
 }
 
 .album-content-likes img:nth-of-type(5) {
     z-index: 5;
-    left: 29vmin;
+    margin-left: 3.1em;
+
 }
 
 .album-content-text i {
@@ -99,7 +109,7 @@
 }
 
 .top-charts h2 {
-    margin-bottom: 4%;
+    margin-bottom: 1em;
 }
 
 .top-charts ul {
@@ -107,12 +117,12 @@
 }
 
 .top-charts li {
-    width: 67vmin;
+    width: 30vw;
     height: 12vmin;
     background-color: #1a1e1f;
     display: flex;
     justify-content: center;
-    margin-bottom: 2%;
+    margin-bottom: 1em;
     border-radius: 20px;
 }
 
@@ -129,7 +139,6 @@
 
 .chart img {
     max-width: 5vw;
-    max-height: 10vh;
     border-radius: 15px;
 }
 
@@ -142,8 +151,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 3%;
     line-height: 20px;
+    margin-left: 1em;
 }
 
 .chart div:nth-of-type(1) span:nth-of-type(1) {
@@ -176,33 +185,35 @@
 
 .new-releases {
     grid-area: releases;
-    margin-bottom: 4%;
+    margin-bottom: 2em;
 }
 
-.releases-img-content {
+.releases-img-content,
+.popular-img-content {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
 .new-releases h2,
 .popular h2 {
-    font-size: 1.3em;
-    margin-bottom: 1.5%;
+    margin-bottom: 1.5em;
 }
 
 .releases-img-content figure,
 .popular-img-content figure {
-    margin-right: 3%;
+    margin-right: 1em;
     cursor: pointer;
+
 }
 
 .releases-img-content img,
 .popular-img-content img {
-    max-width: 23vw;
-    max-height: 22vh;
+    max-width: 165px;
     border-radius: 30px;
 }
+
 
 .releases-img-content figcaption,
 .popular-img-content figcaption {
@@ -214,28 +225,57 @@
     grid-area: popular;
 }
 
-.popular-img-content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+
+
+
+
+@media only screen and (max-width: 1240px) {
+
+    .releases-img-content figure:nth-of-type(6),
+    .popular-img-content figure:nth-of-type(6) {
+        display: none;
+    }
+
+
 }
 
-.popular-img-content figure {
-    margin-right: 3%;
+@media only screen and (max-width: 1090px) {
+
+    .releases-img-content img,
+    .popular-img-content img {
+        max-width: 185px;
+    }
+
+
+    .releases-img-content figure:nth-of-type(5),
+    .popular-img-content figure:nth-of-type(5) {
+        display: none;
+    }
 }
+
+
+@media only screen and (max-width: 900px) {
+
+    .releases-img-content figure:nth-of-type(5),
+    .popular-img-content figure:nth-of-type(5) {
+        display: none;
+    }
+
+}
+
 
 @media only screen and (max-width: 800px) {
-    .content {
+
+    .content-main {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 80vh 1fr 1fr 1fr;
+        grid-template-rows: 80vh repeat(3, 1fr);
         grid-template-areas:
             "album"
             "charts"
             "releases"
             "popular";
         width: 100%;
-        margin: 4%;
     }
 
     .album {
@@ -247,76 +287,237 @@
         max-height: 100%;
     }
 
-    .album-content-text h2 {
-        font-size: 2.2em;
-        margin-bottom: 3%;
-    }
-
-    .album-content-text span {
-        font-size: 0.7em;
-    }
-
-    .album-content-text p {
-        font-size: 0.9em;
-    }
-
-    .top-charts ul {
-        display: inline-flex;
-    }
-
-    .top-charts li {
-        margin-right: 4%;
-        width: 80vw;
-        height: 60vh;
-        display: flex;
-        align-items: center;
-    }
-
-    .chart {
-        display: grid;
-        grid-template-columns: 3fr 1fr;
-        align-items: start;
-        width: 95%;
+    .album-content-text {
+        margin-top: 3em;
     }
 
     .top-charts ul li:nth-of-type(3) {
         display: none;
     }
 
-    .chart img {
-        max-width: 40vw;
-        max-height: 30vh;
-   }
+    .top-charts li {
+        display: flex;
+        align-items: center;
+    }
 
+    .top-charts li a {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        align-items: start;
+        width: 95%;
+        margin: 30px;
+    }
+
+  
     .chart div:nth-of-type(1) {
         display: flex;
         flex-direction: column;
+    }
+
+
+    .album-content-likes img {
+        max-width: 35px;
+    }
+
+    .album-content-likes img:nth-of-type(4) {
+        max-width: 40px;
+    }
+
+    .releases-img-content figure:nth-of-type(4),
+    .popular-img-content figure:nth-of-type(4) {
+        display: none;
+    }
+
+
+    .releases-img-content figure,
+    .popular-img-content figure {
+        margin-right: 2em;
+        cursor: pointer;
+    }
+
+    .releases-img-content img,
+    .popular-img-content img {
+        max-width: 380px;
+    }
+
+    .popular {
+        grid-area: popular;
+    }
+
+    .popular-img-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .popular-img-content figure {
+        margin-right: 3em;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 800px) {
+    .album-content-text h2 {
+        font-size: 3.7em;
+    }
+
+    .album-content-text span {
+        font-size: 1.7em;
+    }
+
+    .album-content-text p,
+    .album-content-text i {
+        font-size: 1.6em;
+    }
+
+
+    .top-charts h2,
+    .new-releases h2,
+    .popular h2 {
+        font-size: 2.2em;
+        margin: 1em 0.5em;
+    }
+
+    .chart i {
+        font-size: 2.3em;
+        width: 55px;
+        height: 55px;
+
+    }
+
+    .top-charts ul {
+        display: inline-flex;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .top-charts li {
+        margin-right: 3em;
+        width: 95vw;
+        height: 70vh;
+
+    }
+
+    .chart img {
+        min-width: 35vw;
+    }
+
+    .chart div:nth-of-type(1) {
+        align-items: flex-start;
+        justify-content: center;
+        line-height: 10px;
+        margin: 0;
+
+    }
+
+    .chart div:nth-of-type(1) span:nth-of-type(1) {
+        font-size: 1.5em;
+        margin-top: 1em;
+    }
+
+    .chart div:nth-of-type(1) span:nth-of-type(2),
+    .chart div:nth-of-type(1) span:nth-of-type(3) {
+        font-size: 1.3em;
     }
 
     .chart div:nth-of-type(1) div {
         line-height: 35px;
     }
 
-    .chart div:nth-of-type(1) span:nth-of-type(1) {
+
+    .releases-img-content figcaption,
+    .popular-img-content figcaption {
         font-size: 1.5em;
-        margin-top: 3%;
-    }
-    
-    .chart div:nth-of-type(1) span:nth-of-type(2),
-    .chart div:nth-of-type(1) span:nth-of-type(3) {
-        font-size: 1.2em;
     }
 }
 
-@media only screen and (max-width: 450px) {
+
+
+@media only screen and (max-width: 500px) {
+
+    .content-main {
+        margin: 0.5em;
+    }
+
     .album-img-content img[alt="weeknd"] {
         display: none;
+    }
+
+    .album-content-likes {
+        grid-template-columns: 1fr 1fr;
     }
 
     .album-content-text {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        left: 0;
+        margin-top: -1em;
+    }
+
+    .album-content-likes img {
+        max-width: 28px;
+    }
+
+    .album-content-likes img:nth-of-type(4) {
+        max-width: 35px;
+    }
+
+    .album-content-likes i {
+        font-size: 1.6em;
+    }
+
+    .album-content-likes span {
+        font-size: 1.3em;
+    }
+
+    .top-charts h2,
+    .new-releases h2,
+    .popular h2 {
+        font-size: 1.2em;
+        margin: 1em 0.5em;
+    }
+
+    .chart div:nth-of-type(1) {
+        align-items: flex-start;
+        justify-content: center;
+
+    }
+
+    .top-charts ul li:nth-of-type(2) {
+        display: none;
+    }
+
+    .top-charts li {
+        margin-right: 4em;
+        width: 78vw;
+        height: 35vh;
+    }
+
+    .chart img {
+        min-width: 25vw;
+    }
+
+    .chart div:nth-of-type(1) span:nth-of-type(1) {
+        font-size: 0.8em;
+        margin-top: 1em;
+    }
+
+    .chart div:nth-of-type(1) span:nth-of-type(2),
+    .chart div:nth-of-type(1) span:nth-of-type(3) {
+        font-size: 0.7em;
+    }
+
+    .releases-img-content figure:nth-of-type(3),
+    .popular-img-content figure:nth-of-type(3) {
+        display: none;
+    }
+
+    .releases-img-content img,
+    .popular-img-content img {
+        width: 41vw;
+    }
+
+    .releases-img-content figure,
+    .popular-img-content figure {
+        margin-right: 0.5em;
     }
 }
