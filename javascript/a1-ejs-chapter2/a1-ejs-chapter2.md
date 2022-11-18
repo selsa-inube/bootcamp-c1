@@ -1,6 +1,6 @@
 # Eloquent JavaScript - Chapter 2
 
-Create a folder with your name and within that folder solve the next exercises:
+Create a folder with your name and within that folder solve the next exercises (use one file per exercise):
 
 ## Looping a triangle
 
