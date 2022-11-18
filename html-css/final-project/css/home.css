@@ -29,7 +29,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 97%;
+    width: 95%;
     border-radius: 30px;
     margin-bottom: 2em;
 }
@@ -252,18 +252,7 @@
     }
 }
 
-
-@media only screen and (max-width: 900px) {
-
-    .releases-img-content figure:nth-of-type(5),
-    .popular-img-content figure:nth-of-type(5) {
-        display: none;
-    }
-
-}
-
-
- @media only screen and (max-width: 870px) {
+ @media only screen and (max-width: 900px) {
 
     
     .content-main {
@@ -334,7 +323,7 @@
 
     .releases-img-content img,
     .popular-img-content img {
-        max-width: 220px;
+        max-width: 200px;
     }
 
     .popular {
@@ -358,7 +347,7 @@
     }
 }
 
-@media only screen and (min-width: 501px) and (max-width: 870px) {
+@media only screen and (min-width: 501px) and (max-width: 900px) {
     .album-content-text h2 {
         font-size: 3.7em;
     }
@@ -439,6 +428,10 @@
     .content-main {
         margin: 0.5em;
         grid-template-rows: 80vh repeat(3, 1fr);
+    }
+
+    .album{
+        width: 95vw;
     }
 
     .album-img-content img[alt="weeknd"] {
