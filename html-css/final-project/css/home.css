@@ -228,7 +228,6 @@
 
 
 
-
 @media only screen and (max-width: 1240px) {
 
     .releases-img-content figure:nth-of-type(6),
@@ -264,31 +263,37 @@
 }
 
 
-@media only screen and (max-width: 800px) {
+ @media only screen and (max-width: 870px) {
 
+    
     .content-main {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 80vh repeat(3, 1fr);
-        grid-template-areas:
+        grid-template-rows: 45vh repeat(3, 1fr);
+         grid-template-areas:
             "album"
             "charts"
             "releases"
             "popular";
-        width: 100%;
+        width: 80vw; 
     }
 
-    .album {
-        max-width: 100%;
-    }
-
+ 
     .album-img-content img[alt="weeknd"] {
-        max-width: 550px;
-        max-height: 100%;
+        display: none;
     }
 
     .album-content-text {
-        margin-top: 3em;
+        margin-top: 1.5em;
+    }
+
+    
+    .album-content-likes img {
+        max-width: 35px;
+    }
+
+    .album-content-likes img:nth-of-type(4) {
+        max-width: 40px;
     }
 
     .top-charts ul li:nth-of-type(3) {
@@ -315,14 +320,6 @@
     }
 
 
-    .album-content-likes img {
-        max-width: 35px;
-    }
-
-    .album-content-likes img:nth-of-type(4) {
-        max-width: 40px;
-    }
-
     .releases-img-content figure:nth-of-type(4),
     .popular-img-content figure:nth-of-type(4) {
         display: none;
@@ -337,7 +334,7 @@
 
     .releases-img-content img,
     .popular-img-content img {
-        max-width: 380px;
+        max-width: 220px;
     }
 
     .popular {
@@ -353,20 +350,26 @@
     .popular-img-content figure {
         margin-right: 3em;
     }
+} 
+
+@media only screen and (max-width: 800px) {
+    nav{
+        display: none;
+    }
 }
 
-@media only screen and (min-width: 501px) and (max-width: 800px) {
+@media only screen and (min-width: 501px) and (max-width: 870px) {
     .album-content-text h2 {
         font-size: 3.7em;
     }
 
     .album-content-text span {
-        font-size: 1.7em;
+        font-size: 1.3em;
     }
 
     .album-content-text p,
     .album-content-text i {
-        font-size: 1.6em;
+        font-size: 1em;
     }
 
 
@@ -379,26 +382,25 @@
 
     .chart i {
         font-size: 2.3em;
-        width: 55px;
-        height: 55px;
+        width: 5px;
+        height: 5px;
 
     }
 
     .top-charts ul {
         display: inline-flex;
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-start;
     }
 
     .top-charts li {
-        margin-right: 3em;
-        width: 95vw;
-        height: 70vh;
-
+        margin-right: 1em;
+        width: 40vw;
+        height: 35vh;
     }
 
     .chart img {
-        min-width: 35vw;
+        min-width: 190px;
     }
 
     .chart div:nth-of-type(1) {
@@ -436,6 +438,7 @@
 
     .content-main {
         margin: 0.5em;
+        grid-template-rows: 80vh repeat(3, 1fr);
     }
 
     .album-img-content img[alt="weeknd"] {
