@@ -1,4 +1,4 @@
-# Eloquent JavaScript - Chapter 2
+# Eloquent JavaScript - Chapter 3
 
 Create a folder with your name and within that folder solve the next exercises (use one file per exercise):
 
