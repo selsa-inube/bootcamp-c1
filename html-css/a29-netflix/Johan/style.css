@@ -1,0 +1,203 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(images/dune-back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.33) 0px -1000px 205px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+header{
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .8vw;
+}
+
+#nav-1{
+    width: 50%;
+}
+
+#nav-1 img{
+    width: 100px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    color: #fff;
+    margin: 0px;
+    align-items: center;
+}
+
+nav ul li{
+    margin: 0px 20px;
+    cursor: pointer;
+}
+
+nav ul li:hover{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.23);
+}
+
+#nav-2{
+    width: 50%;
+    text-align: right;
+    margin-right: 50px;
+    color: #fff;
+    font-size: 1vw;
+}
+
+#nav-2 i{
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+#nav-2 i:hover{
+    color: #E00107;
+}
+
+#nav-2 i:last-of-type{
+    margin-right: 100px;
+}
+
+#nav-2 a{
+    text-decoration: #fff;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #e0010800;
+    
+}
+
+#nav-2 a:hover{
+    border: 1px solid #E00107;
+}
+
+article{
+    width: 100%;
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+h1{
+    font-size: 4vw;
+    margin: 0px 0px;
+}
+
+#article-left{
+    width: 40%;
+}
+
+#article-right{
+    width: 40%;
+    margin-left: 150px;
+}
+
+#article-left p{
+    font-size: 1vw;
+}
+
+#article-left p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 1000;
+    margin-right: 50px;
+}
+
+#article-left p i{
+    color: #F4BC2D;
+    margin-right: 10px;
+}
+
+#article-left b{
+    margin-top: 100px;
+}
+
+#description{
+    margin-top: 50px;
+    font-size: .8vw;
+}
+
+#buttons{
+    margin-top: 50px;
+}
+
+#buttons a{
+    margin: 0px 10px 0px 0px;
+    background-color: #1F58FF;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 10%;
+    border-radius: 10px;
+    font-size: 1vw;
+}
+
+#buttons a:hover{
+    filter: brightness(80%);
+}
+
+#buttons a:last-of-type{
+    background-color: #3f3f3fae;
+}
+
+#posters img{
+    width: 150px;
+    height: 100px;
+    margin: 0px 5px;
+    border-radius: 10px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#posters img:hover{
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+h2{
+    font-size: 1.3vw;
+}
+
+#actors{
+    display: flex;
+}
+
+#actors p{
+    font-size: .9vw;
+}
+
+#actor{
+    text-align: center;
+    margin: 0px 10px;
+}
+#actor img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#actors a{
+    width: 30px;
+    height: 30px;
+    background-color: rgba(66, 66, 66, 0.837);
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.398);
+    text-align: center;
+    line-height: 15px;
+    padding: 10px;
+    font-size: .6vw;
+    border-radius: 50%;
+    margin-left: 20px;
+}
