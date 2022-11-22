@@ -6,10 +6,12 @@ Create a folder with your name and within that folder solve the next exercises (
 
 The previous chapter introduced the standard function Math.min that returns its smallest argument. We can build something like that now. Write a function min that takes two arguments and returns their minimum.
 
+```js
 console.log(min(0, 10));
 // → 0
 console.log(min(0, -10));
 // → -10
+```
 
 ## Recursion
 
@@ -25,12 +27,14 @@ Define a recursive function isEven corresponding to this description. The functi
 
 Test it on 50 and 75. See how it behaves on -1. Why? Can you think of a way to fix this?
 
+```js
 console.log(isEven(50));
 // → true
 console.log(isEven(75));
 // → false
 console.log(isEven(-1));
 // → ??
+```
 
 ## Bean counting
 
@@ -40,7 +44,9 @@ Write a function countBs that takes a string as its only argument and returns a 
 
 Next, write a function called countChar that behaves like countBs, except it takes a second argument that indicates the character that is to be counted (rather than counting only uppercase “B” characters). Rewrite countBs to make use of this new function.
 
+```js
 console.log(countBs("BBC"));
 // → 2
 console.log(countChar("kakkerlak", "k"));
 // → 4
+```
