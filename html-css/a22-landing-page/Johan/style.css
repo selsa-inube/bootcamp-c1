@@ -1,0 +1,251 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: black;
+    min-width: 450px;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.116);
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0px;
+}
+
+nav ul li{
+    margin: 0px 10px;
+    color: rgba(255, 255, 255, 0.726);
+    cursor: pointer;
+    font-size: 1.7vh;
+}
+
+nav ul li:not(nav ul li:last-child):hover{
+    opacity: 90%;
+}
+
+nav ul li:first-of-type{
+    font-weight: 1000;
+}
+
+nav ul li:last-of-type{
+    font-size: 10px;
+    background-color: red;
+    padding: 4px 4%;
+    border-radius: 30px;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    background-color: #0062FE;
+    font-size: 15px;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+header i{
+    position: absolute;
+}
+
+.fa-bars:before{
+    display: none;
+}
+
+section{
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    margin: 100px auto;
+}
+
+#title{
+    width: 60%;
+}
+
+#title h1{
+    font-size: 3vh;
+    width: 40vw;
+    max-width: 450px;
+    margin-top: 0px;
+}
+
+#title i{
+    font-size: 90%;
+    margin-left: 10px;
+}
+
+#title p{
+    color: rgba(255, 255, 255, 0.39);
+    font-size: 1.5vh;
+    width: 40vw;
+}
+
+#p-buttons{
+    width: 40%;
+}
+
+#p-buttons p{
+    color: rgba(255, 255, 255, 0.699);
+    font-size: 1.8vh;
+}
+
+#p-buttons i{
+    margin-left: 10px;
+}
+
+#buttons{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+#buttons a{
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
+    padding: 10px 13px;
+    border-radius: 10px;
+}
+
+#buttons a:first-of-type{
+    background-color: #0062FE;
+}
+
+#buttons a:last-of-type{
+    background-color: #282828;
+    
+}
+
+#buttons a:hover{
+    background: #0011ff5b;
+}
+
+footer{
+    width: 100%;
+    background-color: white;
+}
+
+.illustration{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(rgb(0, 0, 0) 50%, rgb(255, 255, 255) 50%);
+    transform: translateY(-5px);
+}
+
+.illustration img{
+    object-fit: cover;
+    width: 65%;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.illustration img:hover{
+    filter: brightness(90%);
+}
+
+#brands{
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+}
+
+#brands img{
+    object-fit: contain;
+    width: 100px;
+    min-width: 150px;
+    height: 50px;
+    cursor: pointer;
+}
+
+footer p{
+    font-size: 1.7vh;
+    width: 80%;
+    margin: 50px auto;
+    color: black;
+    text-align: center;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 840px) {
+    section{
+        display: flex;
+        width: 80%;
+        flex-direction: column;
+        margin: 100px auto;
+    }
+    #title{
+        width: 100%;
+    }
+    #p-buttons{
+        width: 100%;
+    }
+    #title h1{
+        font-size: 3vh;
+        width: 100vw;
+        max-width: 100%;
+        margin-top: 0px;
+    }
+    header{
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    header img{
+        width: 15%;
+        margin-left: 40px;
+    }
+    nav{
+        display: none;
+    }
+
+    header a{
+        display: none;
+    }
+
+    header i{
+        position: relative;
+        font-size: 3vh;
+        color: rgba(255, 255, 255, 0.479);
+        margin-right: 40px;
+    }
+    
+    .fa-bars:before{
+        display: block;
+    }
+
+    #buttons a{
+        text-decoration: none;
+        color: #fff;
+        margin: 10px;
+        padding: 20px 40px;
+        font-size: 3vw;
+        border-radius: 10px;
+    }
+    #title p{
+        color: rgba(255, 255, 255, 0.39);
+        font-size: 1.5vh;
+        width: 80vw;
+    }
+    .illustration img{
+        object-fit: cover;
+        width: 80%;
+    }
+  }
