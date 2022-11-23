@@ -8,7 +8,7 @@
 .page {
    display: grid;
    grid-template-columns: 1fr;
-   grid-template-rows: 12vh 1fr 0.2fr;
+   grid-template-rows: 10vh 1fr 0.2fr;
 
    grid-template-areas:
       "nav"
@@ -78,6 +78,7 @@ ul li a:hover {
 .content {
    grid-area: content;
    width: 100%;
+   align-self: center;
 }
 
 
@@ -87,51 +88,44 @@ ul li a:hover {
 }
 
 .content img[alt="google"] {
-   max-width: 350px;
+   max-width: 280px;
 }
 
 .input-content {
-   display: flex;
-   justify-content: center;
+   display: grid;
+   grid-template-columns: auto 1fr auto;
    align-items: center;
+   border-radius: 40px;
+   border: 1px solid rgb(236, 234, 234);
+   margin: 0 auto;
+   max-width: 600px;
 }
 
 .input-content input {
    box-sizing: border-box;
-   color: #ab4b4b;
-   padding: 1vw 18vw 1vw 18vw;
-   border-radius: 40px;
-   border: 1px solid rgb(236, 234, 234);
+   padding: 16px;
+   border: none;
 }
 
 
 .input-icon {
    display: inline-block;
-   position: absolute;
    width: 20px;
    line-height: 24%;
    filter: grayscale(1) opacity(30%);
+   margin: 12px;
 
-}
-
-.input-content img[alt="camera"] {
-   right: 28vw;
-}
-
-.input-content img[alt="search"] {
-   left: 28vw;
 }
 
 .buttons {
    display: flex;
-   flex-direction: row;
    justify-content: center;
-   margin-top: 2%;
+   margin-top: 25px;
+   gap: 10px;
 }
 
 .buttons button {
-   margin-right: 0.8%;
-   padding: 1% 2% 1% 2%;
+   padding: 10px 14px;
    border: none;
    border-radius: 5px;
    background-color: #f8f9fa;
@@ -182,7 +176,7 @@ ul li a:hover {
 }
 
 .foot div:nth-of-type(2) ul:nth-of-type(2) li {
-   margin-right: 4%;
+   margin-right: 10px;
 }
 
 .foot a,
@@ -203,16 +197,6 @@ ul li a:hover {
 }
 
 @media only screen and (max-width: 850px) {
-
-   .content img[alt="google"] {
-      max-width: 250px;
-   }
-
-   .buttons button {
-      font-size: 0.6em;
-      font-weight: bold;
-   }
-
 
    .foot {
       grid-template-rows: 0.5fr 2% 1fr;
@@ -269,13 +253,6 @@ ul li a:hover {
       max-width: 5vw;
    }
 
-   .input-content img[alt="camera"] {
-      right: 23vw;
-   }
-
-   .input-content img[alt="search"]{
-      left: 23vw;
-   } 
 }
 
 @media only screen and (max-width: 360px) {
@@ -284,15 +261,6 @@ ul li a:hover {
    .foot a,
    .foot span {
       font-size: 3.5vw;
-
    }
-
-   .input-content img[alt="camera"] {
-      right: 18vw;
-   }
-
-   .input-content img[alt="search"]{
-      left: 18vw;
-   } 
 
 }
