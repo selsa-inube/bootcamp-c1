@@ -1,0 +1,189 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: inherit;
+    background: #5a74ca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+main{
+    background: #000;
+    width: 600px;
+    min-width: 365px;
+    min-height: 847px;
+    height: 99vh;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    border-radius: 50px;
+}
+
+#container-1{
+    width: 95%;
+    margin: 10px auto;
+    height: 76%;
+    border-radius: 50px;
+    background-color: #0d8ac9;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.371) 1px -15px 0px inset;
+}
+
+header{
+    width: 80%;
+    padding-top: 30px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header span{
+    font-size: 20px;
+}
+
+#container-1 > header > i.fas.fa-bars{
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#principal{
+    width: 90%;
+    height: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.096);
+}
+
+#principal a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 10px;
+    padding: 5px 20px;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    margin-top: 0px;
+}
+
+#principal a i{
+    font-size: 7px;
+    margin-right: 5px;
+    color: rgb(0, 255, 0);
+}
+
+h1{
+    font-size: 100px;
+    margin: 0px;
+}
+
+figure img{
+    width: 100%;
+    height: 200px;
+    filter: drop-shadow(-2px 2px 60px rgba(0, 0, 0, 0.7));
+    object-fit: contain;
+}
+
+
+#temperature-datails{
+    margin-bottom: 10px;
+}
+
+#temperature-datails h2{
+    margin: 0px;
+}
+
+#temperature-datails span{
+    color: rgba(255, 255, 255, 0.452);
+}
+
+#properties{
+    margin: 15px auto auto auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 14px;
+}
+
+#properties div{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+#properties i{
+    color: rgba(255, 255, 255, 0.612);
+}
+
+#properties span{
+    color: rgba(255, 255, 255, 0.401);
+}
+
+#hours-head{
+    margin: 20px auto 5px auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#hours-head b{
+    font-size: 20px;
+}
+
+#hours-head a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.631);
+}
+
+#hours{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+#hours div{
+    width: 25%;
+    border: 1px solid rgba(255, 255, 255, 0.268);
+    margin: 10px;
+    border-radius: 30px;
+    padding: 15px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: .5s;
+
+}
+
+#hours div:hover{
+    background-color: #0d8ac9;
+    cursor: pointer;
+    box-shadow: 0 0 50px #0d8ac9;
+    transform: scale(1.1);
+}
+
+#hours div:hover i{
+    color: yellow;
+}
+
+#hours div b{
+    margin-bottom: 5px;
+}
+
+
+#hours div i{
+    font-size: 20px;
+}
+
+#hours div span{
+    color: rgba(255, 255, 255, 0.609);
+}
