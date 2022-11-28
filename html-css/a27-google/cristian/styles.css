@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 1fr 9fr 2fr;
+  height: 100vh;
+  width: 100vw;
+}
+
+nav ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 1.5em;
+  align-items: center;
+  padding: 0 1em;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav i {
+  font-size: 1.5em;
+  color: #7b7d7d;
+}
+
+nav img {
+  width: 2em;
+  border-radius: 50%;
+}
+
+nav a {
+  text-decoration: none;
+  color: #7b7d7d;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+main {
+  align-self: center;
+  text-align: center;
+}
+
+header {
+  margin: auto;
+}
+
+header h1 {
+  font-size: 6em;
+  font-weight: 500;
+  margin: 0 0 16px 0;
+}
+
+.blue {
+  color: #4285f4;
+}
+
+.red {
+  color: #ea4335;
+}
+
+.yellow {
+  color: #fbbc05;
+}
+
+.green {
+  color: #34a853;
+}
+
+.search-bar {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  max-width: 600px;
+  border: 1px solid #b3b6b7;
+  border-radius: 20px;
+  align-self: center;
+  margin: 0 auto;
+}
+
+input {
+  border: none;
+  height: 38px;
+  width: 100%;
+  outline: none;
+}
+
+.search-bar i {
+  font-size: 1.1em;
+  color: #b3b6b7;
+  margin: auto 12px;
+}
+
+.search-buttons {
+  margin: 16px auto;
+  display: inline-block;
+}
+
+.search-buttons button {
+  background-color: #f2f3f4;
+  color: #7b7d7d;
+  font-weight: 500;
+  font-size: 0.8em;
+  border: none;
+  padding: 16px 24px;
+  margin-left: 1em;
+  cursor: pointer;
+}
+
+footer {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background-color: #efefef;
+}
+
+footer p {
+  color: #7b7d7d;
+  margin: auto 30px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  border-top: 1px solid #cacfd2;
+}
+
+footer li {
+  list-style-type: none;
+  font-size: 0.9em;
+  text-align: center;
+  margin-top: 1em;
+}
+
+footer a {
+  text-decoration: none;
+  color: #7b7d7d;
+}
