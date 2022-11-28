@@ -1,18 +1,21 @@
 console.log("2). exercise FizzBuzz");
 
-let message = "";
+for (let i= 1; i <=100; i++) {
+   let fizz, buzz;  
 
-for (let i = 1; i <= 100; i++) {
-   message = i;
-   if (i % 5 == 0 && i % 3 == 0) {
-      message = "FizzBuzz";
-   }else if (i % 3 == 0) {
-      message = "Fizz";
-   }else if (i % 5 == 0) {
-      message = "Buzz";
+   if(i % 3 == 0){
+      fizz = "Fizz";
+   }else{
+      fizz="";
    }
-
-   console.log(message);
+   
+   if(i % 5 == 0){
+      buzz = "Buzz";
+   }else{
+      buzz="";
+   }
+   console.log((fizz + buzz) || i);
 }
-console.log("\n");
+
+
 
