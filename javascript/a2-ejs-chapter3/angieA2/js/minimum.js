@@ -15,10 +15,9 @@ console.log(minim(0, -10));
 
 
 console.log("Option 2");
-const minimum = (c,d) =>{return Math.min(c,d);}
+const minimum = (c,d) => Math.min(c,d);
 console.log(minimum(0, 10));
 console.log(minimum(0, -10));
 
-console.log("\n");
 
 

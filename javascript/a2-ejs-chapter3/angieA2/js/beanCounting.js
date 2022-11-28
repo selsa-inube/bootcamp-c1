@@ -1,9 +1,10 @@
 console.log("3) Exercise bean counting");
 
 function countChar(word, letter = 'B'){
+    
     let l = 0;
-    for (let i = 0; i < word.length; i++) {
-        if(word[i] == letter){
+    for (let letterIterate of word) {
+        if(letterIterate == letter){
             l++;
         }
     }
