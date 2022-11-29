@@ -1,0 +1,142 @@
+html{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    width: 100%;
+    background-color: gray;
+    margin: 0;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+::selection{
+    background-color: #E14D2A;
+}
+
+nav{
+    min-width: 334px;
+    width: 25%;
+    height: 100vh;
+    position: absolute;
+    background-color: #682a25;
+    float: left;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    text-align: left;
+}
+
+main{
+    width: 75%;
+    height: 100vh;
+    min-width: 914px;
+    float: right;
+    background: url(images/main-back2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1{
+    font-size: 5vh;
+    padding-left: 150px;
+    margin-top: 200px;
+}
+
+h2{
+    font-size: 2rem;
+    padding-left: 150px;
+}
+
+h1 i{
+    margin-left: 40px;
+}
+
+#buttons{
+    padding-left: 150px;
+}
+
+button i{
+    margin-left: 10px;
+}
+
+
+#buttons button{
+    font-size: 1.2rem;
+    float: left;
+    margin: 100px 30px 50px 0px;
+    padding: 20px 10px 20px 10px;
+    width: 150px;
+    color: #fff;
+    border: 1px solid white;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: .5s;
+}
+
+#buttons button:first-child{
+    background-color: rgb(255, 136, 0);
+    color: #000;
+    border: 1px solid #000;
+}
+
+#buttons button:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgb(255, 136, 0);
+    border: 1px solid rgb(255, 136, 0);
+    transition: .5s;
+}
+
+#profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 50px auto;
+    flex-direction: row;
+}
+
+#profile img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+ul{
+    list-style: none;
+    margin-bottom: 50px;
+    width: 100%;
+    padding: 0;
+} 
+
+li{
+    padding: 10px;
+    width: 80%;
+    font-size: 1.1rem;
+    transition: .5s;
+}
+
+li:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    width: 90%;
+    color: #FD841F;
+    transition: .5s;
+}
+
+li i{
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+body > nav > hr{
+    filter: brightness(50%);
+}
+
+#aside-footer{
+    margin-top: 50px;
+    margin-left: 60px;
+}

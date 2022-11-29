@@ -1,0 +1,388 @@
+html{
+    border: 0px;
+    margin: 0px;
+}
+
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+span{
+    font-size: 100px;
+    float: left;
+    line-height: 40px;
+    margin-right: 20px;
+}
+
+body > main > article > h2{
+    margin-top: 50px;
+    font-size: 28px;
+}
+
+p{
+    line-height: 30px;
+    margin-top: 60px;
+    font-size: 20px;
+}
+
+h2{
+    font-weight:100;
+}
+
+h2:first-child{
+    font-weight:1000;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+div ul{
+    font-size: 20px;
+    margin-top: 40px;
+}
+div ul li{
+    margin: 10px;
+    line-height: 30px;
+}
+
+article{
+    width: 60%;
+    margin: auto;
+    margin-right: 300px;
+    margin-top: 150px;
+}
+
+h1{
+    font-size: 28px;
+    font-weight:100;
+}
+
+body > main > article > ul > li{
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+body > main > article > p:nth-child(10){
+    margin-bottom: 40px;
+}
+
+body > main > article > p:nth-child(12){
+    font-size: 16px;
+    font-family: 'EYInterstate',sans-serif;
+}
+
+body > main > article > b:nth-child(13){
+    font-size: 100px;
+    font-family: 'EYInterstate',sans-serif;
+    font-weight:200;
+}
+
+body > main > article > p:nth-child(14){
+    font-size: 16px;
+    font-family: 'EYInterstate',sans-serif;
+}
+
+body > main > article > p:nth-child(18){
+    font-size: 16px;
+    font-family: 'EYInterstate',sans-serif;
+}
+
+body > main > article > b:nth-child(19){
+    font-size: 100px;
+    font-family: 'EYInterstate',sans-serif;
+    font-weight:200;
+}
+
+body > main > article > p:nth-child(20){
+    font-size: 16px;
+    font-family: 'EYInterstate',sans-serif;
+}
+
+body > main > article > div:nth-child(23){
+    background-color: #c4c4c4;
+    display: flex;
+    width: 100%;
+    height: 550px;
+    text-align: center;
+    align-items: center;
+}
+
+body > main > article > div:nth-child(23) > div:nth-child(2) > p{
+    margin: 120px  100px 0px 50px;
+    font-weight: bold;
+}
+
+body > main > article > div:nth-child(23) > div:nth-child(1) > p{
+    margin: 120px 50px 0px 100px;
+    font-weight: bold;
+}
+
+body > main > article > div:nth-child(23) > div:nth-child(2) > b{
+
+    padding: 60px 40px 60px 40px;
+    border-radius: 100%;
+    border: 20px solid #747480;
+    font-weight:100;
+    font-size: 50px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+body > main > article > div:nth-child(23) > div:nth-child(1) > b{
+    padding: 60px 40px 60px 40px;
+    border-radius: 100%;
+    border: 20px solid #747480;
+    font-weight:100;
+    font-size: 50px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+body > main > article > div:nth-child(23) > div:nth-child(1) > b:hover{
+    border: 10px solid yellow;
+    padding: 60px 40px 60px 40px;
+    font-size: 60px;
+    color: yellow;
+    transition: .5s;
+}
+
+body > main > article > div:nth-child(23) > div:nth-child(2) > b:hover{
+    border: 10px solid yellow;
+    padding: 60px 40px 60px 40px;
+    font-size: 60px;
+    color: yellow;
+    transition: .5s;
+}
+
+body > main > article > div:nth-child(26){
+    display: flex;
+    margin-left: 100px;
+}
+
+body > main > article > div:nth-child(26) > div:nth-child(1) > p:nth-child(3){
+    font-size: 16px;
+    font-family: 'EYInterstate',sans-serif;
+}
+
+body > main > article > div:nth-child(26) > div:nth-child(1) > b{
+    font-size: 100px;
+    font-family: 'EYInterstate',sans-serif;
+    font-weight:200;
+}
+
+body > main > article > div:nth-child(26) > div:nth-child(1) > p:nth-child(1){
+    font-size: 16px;
+    font-family: 'EYInterstate',sans-serif;
+}
+
+body > main > article > div:nth-child(30){
+    display: flex;
+    justify-content: space-around;
+}
+
+body > main > article > div:nth-child(26) > div:nth-child(2) > p:nth-child(3){
+    font-size: 16px;
+    font-family: 'EYInterstate',sans-serif;
+}
+
+body > main > article > div:nth-child(26) > div:nth-child(2) > b{
+    font-size: 100px;
+    font-family: 'EYInterstate',sans-serif;
+    font-weight:200;
+}
+
+body > main > article > div:nth-child(26) > div:nth-child(2) > p:nth-child(1){
+    font-size: 16px;
+    font-family: 'EYInterstate',sans-serif;
+}
+
+body > main > article > div:nth-child(30) > div:nth-child(1) > p:nth-child(3){
+    font-size: 16px;
+    font-family: 'EYInterstate',sans-serif;
+}
+
+body > main > article > div:nth-child(30) > div:nth-child(1) > b{
+    font-size: 100px;
+    font-family: 'EYInterstate',sans-serif;
+    font-weight:200;
+}
+
+body > main > article > div:nth-child(30) > div:nth-child(1) > p:nth-child(1){
+    font-size: 16px;
+    font-family: 'EYInterstate',sans-serif;
+}
+
+body > main > article > div:nth-child(30) > div:nth-child(2) > p:nth-child(3){
+    font-size: 16px;
+    font-family: 'EYInterstate',sans-serif;
+}
+
+body > main > article > div:nth-child(30) > div:nth-child(2) > b{
+    font-size: 100px;
+    font-family: 'EYInterstate',sans-serif;
+    font-weight:200;
+}
+
+body > main > article > div:nth-child(30) > div:nth-child(2) > p:nth-child(1){
+    font-size: 16px;
+    font-family: 'EYInterstate',sans-serif;
+}
+
+
+
+body > main > article > div:nth-child(32){
+    display: flex;
+}
+
+body > main > article > div:nth-child(32) > div:nth-child(1) > h2{
+    font-size: 40px;
+    font-weight:200;
+}
+
+body > main > article > div:nth-child(32) > div:nth-child(1){
+    margin-right: 55px;
+}
+
+body > main > article > div:nth-child(32) > div:nth-child(2){
+    margin-top: 200px;
+    width: 1500px;
+}
+
+body > main > article > div:nth-child(32) > div:nth-child(2) > p{
+    margin: 5px 0px;
+    font-size: 1rem;
+    color: gray;
+}
+
+body > main > article > div:nth-child(32) > div:nth-child(2) > h2{
+    font-size: 2rem;
+}
+
+body > main > article > div:nth-child(32) > div:nth-child(2) > a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+body > main > article > div:nth-child(32) > div:nth-child(2) > a:hover{
+    border-bottom: 1px solid black;
+}
+
+/* card contact */
+
+body > main > div > div{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin: auto;
+}
+
+body > main > div > h2{
+    font-size: 2.5rem!important;
+    font-weight: 1000 ;
+    font-family: 'EYInterstate',sans-serif;
+    font-weight: 100!important;
+    width: 95%;
+    margin: 100px auto 50px auto !important;
+}
+
+body > main > div > div > div:nth-child(1) > img{
+    position: absolute;
+    z-index: -1;
+    width: 600px;
+}
+
+body > main > div > div > div:nth-child(1) > div{
+    background-color: #2E2E38;
+    width: 600px;
+    margin-right: 20px;
+    margin-top: 350px;
+    color: #fff;
+
+}
+
+body > main > div > div > div:nth-child(1) > div > b{
+    padding: 20px;
+    margin: 0px;
+    color: yellow;
+    font-family: 'EYInterstate',sans-serif;
+    font-weight: 200;
+}
+
+body > main > div > div > div:nth-child(1) > div > h3{
+    padding: 20px;
+    margin: 0px;
+    font-family: 'EYInterstate',sans-serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+body > main > div > div > div:nth-child(1) > div > p{
+    padding: 20px 20px 30px 20px;
+    margin: 0px;
+    font-weight: 300;
+    font-size: 16px;
+    font-family: 'EYInterstate',sans-serif;
+    font-weight: 200;
+}
+
+body > main > div > div > div:nth-child(2) > img{
+    position: absolute;
+    z-index: -1;
+    width: 600px;
+}
+
+body > main > div > div > div:nth-child(2) > div{
+    background-color: #2E2E38;
+    width: 600px;
+    margin-right: 20px;
+    margin-top: 350px;
+    color: #fff;
+
+}
+
+body > main > div > div > div:nth-child(2) > div > b{
+    padding: 20px;
+    margin: 0px;
+    color: yellow;
+    font-family: 'EYInterstate',sans-serif;
+    font-weight: 200;
+}
+
+body > main > div > div > div:nth-child(2) > div > h3{
+    padding: 20px;
+    margin: 0px;
+    font-family: 'EYInterstate',sans-serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+body > main > div > div > div:nth-child(2) > div > p{
+    padding: 20px 20px 30px 20px;
+    margin: 0px;
+    font-weight: 300;
+    font-size: 16px;
+    font-family: 'EYInterstate',sans-serif;
+    font-weight: 200;
+}
+
+body > main > div:nth-child(3){
+    width: 60%;
+    margin: auto;
+}
+
+body > main > div:nth-child(3) > h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.8rem!important;
+    margin: 100px 0px 0px 0px!important;
+}
+
+body > main > div:nth-child(3) > p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem!important;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+
+
+
