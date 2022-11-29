@@ -2,8 +2,8 @@ console.log("Third exercise: Bean Counting")
 
 function countBs(a) {
     let count = 0;
-    for (let i = 0; i < a.length; i += 1) {
-        if (a.charAt(i) === "B")
+    for (let counter of a) {
+        if (counter === "B")
             count += 1;
     }
     return count;
@@ -11,8 +11,8 @@ function countBs(a) {
 
 function countChar(a, b) {
     let count = 0;
-    for (let i = 0; i < a.length; i += 1) {
-        if (a.charAt(i) === b)
+    for (let counter of a) {
+        if (counter === b)
             count += 1;
     }
     return count;
