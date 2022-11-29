@@ -1,21 +1,17 @@
 console.log("Third exercise: Chessboard");
 
-function ajedrez() {
-  let par = "";
-  let impar = "";
-  while (par.length < 8) {
-    if (par.length % 2 === 0) {
-      par += "#";
-      impar += " ";
-    }
-    if (par.length % 2 === 1) {
-      par += " ";
-      impar += "#";
+let size = 8;
+let chessboard = '';
+
+for (let a = 0; a < size; a++) {
+  for (let b = 0; b < size; b++) {
+    if ((a + b) % 2 == 0) {
+      chessboard += ' ';
+    } else {
+      chessboard += '#';
     }
   }
-  for (let i = 0; i < 8; i++) {
-    if (i % 2 === 0) console.log(par + "\n");
-    if (i % 2 === 1) console.log(impar + "\n");
-  }
+  chessboard += '\n'
 }
-ajedrez();
+console.log(chessboard)
+
