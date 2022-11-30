@@ -1,0 +1,240 @@
+body{
+   background: url(../images/fondo-album.jpg) !important;
+   background-size: cover !important;
+   background-repeat: no-repeat !important;
+   background-position: -0px -120px !important;
+   box-shadow: #1D2123 100px -1250px 1000px 100px inset;
+}
+
+html{
+    width: 100%;
+    background-color: #1D2123;
+}
+
+
+
+#top-content-album{
+    width: 95%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+article{
+    width: 90%;
+    height: 160vh !important;
+}
+
+#search input{
+    background-color: #1d212300 !important;
+    border: 0px !important;
+}
+
+#top-content-album img{
+    width: 300px;
+    border-radius: 30px;
+    object-fit: cover;
+    transition: .5s;
+    cursor: pointer;
+}
+
+#top-content-album img:hover{
+    transform: scale(1.01);
+    opacity: 70%;
+}
+
+#top-content-text{
+    margin-left: 40px;
+    max-width: 45%;
+}
+
+#top-content-text h1{
+    font-size: 35px;
+    color: #A4C7C6;
+}
+
+#top-content-buttons{
+    margin-top: 40px;
+}
+
+#top-content-buttons a{
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.07);
+    padding: 10px 8px;
+    margin-right: 0px;
+    border-radius: 20px;
+    font-size: 15px;
+
+}
+
+#top-content-buttons a:hover{
+    background: rgba(255, 255, 255, 0.144);
+}
+
+
+
+#top-content-buttons a i{
+    font-size: 17px;
+    color: #FACD66;
+}
+
+#top-content-buttons > a:nth-child(3) > i{
+    color: #E5524A;
+}
+
+#music-list{
+    margin-top: 60px;
+}
+
+.list-song{
+    width: 90%;
+    background: rgba(51, 55, 59, 0.37);
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 15px 20px ;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.list-song:hover{
+    transform: scale(1.025);
+}
+
+.image-heart{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-song img{
+    width: 50px;
+    object-fit: cover;
+}
+
+.image-heart i{
+    margin-left: 30px;
+    color: #1d212300;
+    -webkit-text-stroke: 1px #ffffff;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.list-song span{
+    width: 15%;
+}
+
+.image-heart i:hover{
+    color: #E5524A;
+    -webkit-text-stroke: 0px;
+    transform: scale(1.2);
+}
+
+.text1{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+#music-list > div > div.text1 > span{
+    width: 100%;
+}
+
+.text2{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text2 i{
+    margin-right: 20px;
+    color: #FACD66;
+    cursor: pointer;
+}
+
+#top-content-buttons > a:nth-child(3) > b{
+    display: none;
+}
+
+/* Mobile View */
+@media only screen and (max-width: 800px) {
+
+    body{
+        min-width: 400px !important;
+    }
+
+    .list-song{
+        padding: 20px 0px 20px 20px;
+    }
+
+    .image-heart > i{
+        display: none;
+    }
+
+    #top-content-album{
+        flex-direction: column;
+    }
+    #top-content-album img{
+        width: 100%;
+        height: 300px;
+    }
+
+    #top-content-buttons > a:nth-child(3) > b{
+        display: block;
+    }
+
+    #top-content-text{
+        max-width: 100%;
+        margin: 0px;
+    }
+    #top-content-buttons{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #top-content-buttons a{
+        display: flex;
+        padding: 10px 10px;
+    }
+
+    #top-content-buttons a i{
+        margin-right: 10px;
+    }
+    #bar-song{
+        display: none !important;
+    }
+
+    #music-list > div:nth-child(1) > div.text1{
+        display: flex;
+        width: 50%;
+    }
+
+    .text1{
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .text2{
+        flex-direction: column-reverse;
+        text-align: right;
+        align-items: flex-end;
+        font-size: 13px;
+    }
+
+    .text2 p{
+        margin: 10px 20px 0px 0px;
+    }
+
+}
