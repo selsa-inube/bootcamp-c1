@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  color: black;
+  padding: 10px;
+  border: 1px solid #eaeaea;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calendar {
+  font-size: 30px;
+  color: #0008c1;
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  padding: 5px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.meeting {
+  width: 200px;
+  border-radius: 20px;
+  border: 2px solid #eaeaea;
+}
+
+button {
+  float: right;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px 25px;
+  border-radius: 20px;
+  background-color: #7f55e6;
+}
+
+aside {
+  width: 10%;
+  height: 100vh;
+  display: inline-block;
+  border: 2px solid #eaeaea;
+}
+
+section {
+  width: 90%;
+  display: flex;
+  float: right;
+}
+
+.header-container {
+  display: flex;
+  color: #5995da;
+  background-color: #d6e9fe;
+}
+
+.header {
+  height: 120px;
+  display: flex;
+}
+
+.photo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  border: 1px solid #eaeaea;
+}
+
+.photo-grid-item {
+  width: 177.8px;
+  height: 196.7px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+}
+
+.time {
+  width: 155px;
+  height: 196.7px;
+  text-align: center;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 10px 10px;
+}
+
+.item-text{
+  font-size: 15px;
+  padding: 10px;
+}
+
+.item {
+  font-size: 15px;
+  padding: 10px;
+}
+
+.card-one,
+.card-two {
+  width: 150px;
+  height: 170px;
+  background: #ededed;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+.card-three {
+  width: 150px;
+  height: 170px;
+  background: #e4eef8;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+.card-four {
+  width: 150px;
+  height: 170px;
+  background: #ecf5f4;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+.card-five {
+  width: 150px;
+  height: 170px;
+  background: #fcf0e4;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+.card-six {
+  width: 150px;
+  height: 170px;
+  background: #ededed;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+.card-six i {
+  font-size: 30px;
+  color: black;
+  margin: 70px 60px;
+}
+
+.card-seven {
+  width: 150px;
+  height: 170px;
+  background: #ecf5e7;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+.card-eight {
+  width: 150px;
+  height: 170px;
+  background: #f6f6f6;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+.card-nine {
+  width: 150px;
+  height: 170px;
+  background: #fceeec;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+.date {
+  width: 178.2px;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.text {
+  text-align: center;
+  margin: 20px 50px;
+}
+
+.date-one {
+  width: 157px;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+i {
+  color: #c3c5c6;
+  font-size: 50px;
+  margin: 30px 50px;
+  cursor: pointer;
+}
+
+p {
+  color: #c3c5c6;
+  font-weight: 700;
+}
+
+span {
+  color: black;
+  font-size: 40px;
+  font-weight: 700;
+}

@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 200vh;
+  background-color: #e0e0e0;
+}
+
+aside {
+  width: 80px;
+  height: 100vh;
+  display: grid;
+  position: fixed;
+  background-color: #fff;
+}
+
+.items-one {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.items-one img {
+  border-radius: 10px;
+}
+
+ul li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.dropdown-one,
+.dropdown-two {
+  width: 100%;
+  display: flex;
+  position: relative;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.dropdown-one img {
+  width: 50px;
+  height: 50px;
+}
+
+.dropdown-one:hover .deployment-one,
+.dropdown-two:hover .deployment-two {
+  display: flex;
+}
+
+.deployment-one {
+  width: 250px;
+  height: 280px;
+  display: none;
+  position: absolute;
+  border-radius: 10px;
+  margin: -15px 0px 0px 340px;
+  background-color: #f8f9f9;
+}
+
+.deployment-one ul {
+  list-style: none;
+  padding: 10px 5px;
+}
+
+.deployment-one li {
+  display: flex;
+  padding: 10px;
+}
+
+.deployment-one img {
+  width: 40px;
+  height: 40px;
+}
+
+.deployment-one li:hover {
+  border-radius: 10px;
+  background-color: #f3f1ff;
+}
+
+.deployment-one h1 {
+  padding: 3px;
+  margin-left: 5px;
+}
+
+.deployment-two {
+  left: 85px;
+  width: 200px;
+  height: 300px;
+  bottom: -15px;
+  display: none;
+  padding: 10px 5px;
+  position: absolute;
+  border-radius: 10px;
+  background-color: #f8f9f9;
+}
+
+h1 {
+  display: grid;
+  font-size: 15px;
+}
+
+span {
+  font-size: 10px;
+  font-weight: 500;
+  color: #abb2b9;
+}
+
+.deployment-two ul {
+  display: grid;
+  gap: 5px;
+}
+
+.deployment-two li {
+  display: flex;
+  padding: 5px;
+}
+
+.deployment-two p {
+  display: grid;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.deployment-two span {
+  font-size: 10px;
+  font-weight: 600;
+  color: #abb2b9;
+  text-align: start;
+}
+
+.deployment-two li:hover {
+  border-radius: 5px;
+  background-color: #aee9dc;
+}
+
+.items-two,
+.items-three,
+.items-four,
+.items-five,
+.items-six {
+  font-size: 24px;
+  margin: 0px auto;
+}
+
+i {
+  color: #b2babb;
+}
+
+i:hover {
+  color: #000000;
+}
+
+.items-one ul,
+.items-seven ul {
+  width: 100%;
+}
+
+.items-seven img {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+}
+
+.items-seven {
+  display: flex;
+  align-items: center;
+}
+
+.deployment-two h1 {
+  margin-left: 10px;
+}
+
+.terms {
+  margin: 0 auto;
+}
