@@ -1,0 +1,212 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    width: 100%;
+}
+
+#header-1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.312);
+}
+
+#header-1 img{
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+}
+
+#icons{
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+#icons i:last-of-type{
+    margin-left: 50px;
+}
+
+#login-sub{
+    margin-right: 50px;
+}
+
+#login-sub a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 30px;
+}
+
+#login-sub a:last-of-type{
+    border: 1px solid black;
+}
+
+#header-2{
+    width: 100%;
+}
+
+#header-2 ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#header-2 ul li{
+    cursor: pointer;
+}
+#header-2 ul li:not(#header-2 ul li:first-of-type):not(#header-2 ul li:last-of-type):hover{
+    border-bottom: 2px solid black;
+}
+
+#header-2 ul li:last-of-type{
+    background-color: black;
+    color: white;
+    padding: 30px;
+}
+
+section{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.22);
+}
+
+section i{
+    cursor: pointer;
+}
+
+section div:not(.date){
+    width: 30%;
+    border-right: 1px solid rgba(0, 0, 0, 0.22);
+    margin: 20px;
+}
+
+section div p{
+    padding: 0px 50px 0pc 0pc;
+}
+
+article div ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+article div ul li{
+    margin: 10px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+article div ul li:not(article div ul li:first-of-type):hover{
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+section div img{
+    width: 300px;
+    object-fit: cover;
+}
+
+.date{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin-top: 50px;
+}
+
+.date a{
+    margin: 0px 20px 0px 0px;
+    text-decoration: none;
+    background-color: black;
+    padding: 10px;
+    color: white;
+}
+
+.continue{
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.22);
+}
+
+section div i{
+    margin: 10px;
+}
+
+body > article > section > div:nth-child(3) > div{
+    width: 100%;
+}
+
+body > article > section > div:nth-child(3) > div > div{
+    width: 100%;
+}
+
+.article-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body > article > section > div:nth-child(3) > div{
+    margin: 0px;
+}
+
+.article-img img{
+    width: 200px;
+    object-fit: cover;
+}
+.art-text{
+    line-height: 20px;
+}
+
+.art-text b{
+    font-size: 13px;
+}
+
+#titles-card{
+    display: flex;
+    align-items: center;
+    width: 95%;
+    justify-content: space-between;
+}
+
+#card-container{
+    width: 95%;
+    margin: auto;
+    display: flex;
+}
+
+.card{
+    width: 17%;
+    height: 150px;
+    background-color: rgb(254, 88, 88);
+    margin: 0px 10px;
+    margin-bottom: 100px;
+    color: white;
+    padding: 30px;
+    opacity: 80%;
+}
+
+.green{
+    background-color: rgb(55, 133, 55);
+}
+
+.black{
+    background-color: rgb(0, 0, 0);
+}
+
+#card-container > div i:last-of-type{
+    font-size: 2vw;
+    margin-left: 50px;
+    position: absolute;
+}
+
+
