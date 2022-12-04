@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="santiago.style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/7b4b9c23a4.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Weather</title>
+  </head>
+  <body>
+    <main>
+      <div class="content-blue">
+        <nav class="menu">
+          <div class="circle">
+            <img
+              src="images/proporcion-signo-matematico-de-cuatro-puntos.png"
+              alt="four_points"
+            />
+          </div>
+          <div>
+            <i class="fa-solid fa-location-dot"></i>
+            <span class="text-title text-color-title">Minsk</span>
+          </div>
+          <div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+        </nav>
+        <section class="content-one">
+          <div>
+            <button class="text-color-title">
+              <i class="fa-solid fa-circle"></i> Updating
+            </button>
+          </div>
+          <figure>
+            <i class="fa-solid fa-cloud-bolt"></i>
+          </figure>
+          <p class="text-one text-color-title">
+            21<span class="text-two">&#186;</span>
+          </p>
+          <span class="text-two text-color-title">Thunderstorm</span>
+          <span class="text-three text-color">Monday, 17 May</span>
+          <div class="content-climate">
+            <div class="dates-climate">
+              <i class="fa-solid fa-wind"></i>
+              <span class="text-three text-color-title">13km/h</span>
+              <span class="text-four text-color-two">Wind</span>
+            </div>
+            <div class="dates-climate">
+              <img src="images/soltar.png" alt="water" />
+              <span class="text-three text-color-title">24&#37;</span>
+              <span class="text-four text-color-two">Humidity</span>
+            </div>
+            <div class="dates-climate">
+              <i class="fa-solid fa-water"></i>
+              <span class="text-three text-color-title">87&#37;</span>
+              <span class="text-four text-color-two">Chance of rain</span>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section>
+        <div class="content-today">
+          <span class="text-color-title">Today</span>
+          <div>
+            <a href="#climate" class="link-text">
+              <span class="text-four text-color-three link-text">7 days</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="content-cards">
+          <div class="card">
+            <span class="text-color-title">23&#186;</span>
+            <i class="fa-solid fa-cloud-showers-heavy"></i>
+            <span class="text-four text-color-three">10:00</span>
+          </div>
+          <div class="card">
+            <span class="text-color-title">21&#186;</span>
+            <i class="fa-solid fa-bolt"></i>
+            <span class="text-four text-color-three">11:00</span>
+          </div>
+          <div class="card">
+            <span class="text-color-title">22&#186;</span>
+            <i class="fa-solid fa-cloud-showers-heavy"></i>
+            <span class="text-four text-color-three">12:00</span>
+          </div>
+          <div class="card">
+            <span class="text-color-title">19&#186;</span>
+            <i class="fa-solid fa-cloud-moon-rain"></i>
+            <span class="text-four text-color-three">01:00</span>
+          </div>
+        </div>
+      </section>
+      <div class="content-blue">
+        <nav class="menu" id="climate">
+          <div>
+            <a class="circle link" href="#"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></a>
+          </div>
+          <div>
+            <i class="fa-regular fa-calendar"></i>
+            <span class="text-title text-color-title">7days</span>
+          </div>
+          <div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+        </nav>
+        <section class="content-section-three">
+          <div class="content-date-two">
+            <figure>
+              <i class="fa-solid fa-cloud-sun-rain"></i>
+            </figure>
+            <div class="content-date-two-text">
+              <span class="text-color-title">Tommorow</span>
+              <p class="text-five text-color-title">
+                20 <span class="text-number">/17&#186;</span>
+              </p>
+              <span class="text4 text-color-two">Rainy-Cloudy</span>
+            </div>
+          </div>
+          <div class="content-climate">
+            <div class="dates-climate">
+              <i class="fa-solid fa-wind"></i>
+              <span class="text-three text-color-title">9km/h</span>
+              <span class="text-four text-color-two">Wind</span>
+            </div>
+            <div class="dates-climate">
+              <img src="images/soltar.png" alt="water" />
+              <span class="text-three text-color-title">31&#37;</span>
+              <span class="text-four text-color-two">Humidity</span>
+            </div>
+            <div class="dates-climate">
+              <i class="fa-solid fa-water"></i>
+              <span class="text-three text-color-title">93&#37;</span>
+              <span class="text-four text-color-two">Chance of rain</span>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="content-section-four">
+        <div class="content-climate-week">
+          <span class="text-color-three">Mon</span>
+          <div class="content-climate-icon">
+            <i class="fa-solid fa-cloud"></i>
+            <span class="text-color-three">Rainy</span>
+          </div>
+          <p class="text-color-title">
+            &#43;20&#37; <span class="text-color-three">&#43;14&#37;</span>
+          </p>
+        </div>
+        <div class="content-climate-week">
+          <span class="text-color-three">Tue</span>
+          <div class="content-climate-icon">
+            <i class="fa-solid fa-cloud"></i>
+            <span class="text-color-three">Rainy</span>
+          </div>
+          <p class="text-color-title">
+            &#43;22&#37; <span class="text-color-three">&#43;16&#37;</span>
+          </p>
+        </div>
+        <div class="content-climate-week">
+          <span class="text-color-three">Wed</span>
+          <div class="content-climate-icon">
+            <i class="fa-solid fa-bolt"></i>
+            <span class="text-color-three">Storm</span>
+          </div>
+          <p class="text-color-title">
+            &#43;19&#37; <span class="text-color-three">&#43;13&#37;</span>
+          </p>
+        </div>
+        <div class="content-climate-week">
+          <span class="text-color-three">Thu</span>
+          <div class="content-climate-icon">
+            <i class="fa-solid fa-cloud-rain"></i>
+            <span class="text-color-three">Slow</span>
+          </div>
+          <p class="text-color-title">
+            &#43;18&#37; <span class="text-color-three">&#43;12&#37;</span>
+          </p>
+        </div>
+        <div class="content-climate-week">
+          <span class="text-color-three">Fri</span>
+          <div class="content-climate-icon">
+            <i class="fa-solid fa-bolt"></i>
+            <span class="text-color-three">Rainy</span>
+          </div>
+          <p class="text-color-title">
+            &#43;20&#37; <span class="text-color-three">&#43;14&#37;</span>
+          </p>
+        </div>
+        <div class="content-climate-week">
+          <span class="text-color-three">Sat</span>
+          <div class="content-climate-icon">
+            <i class="fa-solid fa-bolt"></i>
+            <span class="text-color-three">Rainy</span>
+          </div>
+          <p class="text-color-title">
+            &#43;25&#37; <span class="text-color-three">&#43;17&#37;</span>
+          </p>
+        </div>
+        <div class="content-climate-week">
+          <span class="text-color-three">Sun</span>
+          <div class="content-climate-icon">
+            <i class="fa-solid fa-bolt"></i>
+            <span class="text-color-three">Storm</span>
+          </div>
+          <p class="text-color-title">
+            &#43;21&#37; <span class="text-color-three">&#43;18&#37;</span>
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
