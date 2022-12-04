@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 45% 55%;
+  background-image: linear-gradient(#031833, #000918);
+}
+
+main {
+  background-image: linear-gradient(#18bdf8, #1169f4);
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  display: grid;
+  grid-template-rows: 25% 50% 25%;
+  box-shadow: 0 15px 10px rgba(17, 105, 244, 0.3);
+}
+
+header {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 15vw 60vw 15vw;
+  gap: 5vw;
+  text-align: center;
+}
+
+header a {
+  margin: auto;
+}
+
+header a i {
+  font-size: 1.8em;
+  color: #ffffff;
+  padding: 0.2em;
+  margin: 0 0.5em;
+}
+
+.bx-chevron-left {
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+}
+
+header h1 {
+  margin: auto;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+article {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  margin: 0 1.5em;
+}
+
+article img {
+  width: 8em;
+}
+
+.date {
+  text-align: start;
+  color: #ffffff;
+  margin: 0 1em;
+}
+
+.date h2 {
+  font-size: 4.5em;
+  font-weight: 600;
+}
+
+h2 span {
+  font-size: 0.6em;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.date h5 {
+  font-size: 1.3em;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.date p {
+  font-size: 0.9em;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto 1.5em;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.options i {
+  color: rgba(255, 255, 255, 0.6);
+  display: block;
+  text-align: center;
+  font-size: 1.3em;
+  margin-top: 0.7em;
+}
+
+.options p {
+  color: rgba(255, 255, 255, 1);
+  font-size: 0.8em;
+  text-align: center;
+  font-weight: 600;
+}
+
+.options span {
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+}
+
+footer {
+  display: grid;
+  grid-template-rows: repeat(7, 1fr);
+  margin: 1em 1.5em;
+  gap: 0.5em;
+  color: #ffffff;
+}
+
+footer p {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  align-items: center;
+  font-weight: 600;
+  padding-left: 00.5em;
+}
+
+.temp {
+  text-align: end;
+  margin: 0 0.5em;
+}
+
+strong {
+  display: flex;
+  align-items: center;
+}
+
+img[alt="card"] {
+  width: 2.5em;
+  margin: 0 0.5em;
+  display: inline;
+}
+
+.alignment {
+  font-weight: 400;
+}
+
+.temp-min {
+  font-size: 0.9em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+footer p:hover {
+  background-image: linear-gradient(#283747, #212f3c);
+  height: 110%;
+  border-radius: 15px;
+}
