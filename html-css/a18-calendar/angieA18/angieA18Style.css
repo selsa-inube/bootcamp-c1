@@ -1,0 +1,235 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: sans-serif;
+   }
+   
+.container{
+    display: grid;
+    grid-template-columns: 160px 100px 1fr;
+    grid-template-rows: 120px 1fr;
+    grid-template-areas: 
+    "sidebar days days"
+    "sidebar hour content";
+    width: 100%;
+    min-height: 100vh;
+    place-content: center;
+}
+
+
+.menu {
+    grid-area: sidebar;
+    background-color: #f7e0e0;
+}
+
+
+.dates{
+    grid-area: days; 
+    background-color: #fffffff0;
+    margin-top: 20px;
+}
+
+.dates-content{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 100px repeat(8, 1fr);
+    align-content: center;
+    justify-content: center;
+    
+}
+
+.dates .dates-text{
+    display: grid;
+    place-content: center;
+  
+}
+
+.dates span{
+    display: block;
+    font-size: 15px;
+    color: #c1c3c8;
+    font-weight: 600;
+    margin-bottom: 3px;
+
+    
+}
+
+.dates .date-number{
+    font-size: 2em;
+    color: black;
+    
+}
+
+.dates-content .container-circle{
+ margin-left: 20px;
+}
+
+
+.container-circle .circle{
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-content: center;
+    background-color: #f5f6f7;
+    border-radius: 50%;
+    margin-top: 15px;
+    cursor: pointer;
+   
+}
+
+.container-circle .circle img{
+    width: 30px;
+    height: 30px;
+}
+
+.time{
+    grid-area: hour;
+    display: grid;
+    place-content: center;
+    grid-template-rows: repeat(12, 1fr);
+    position: relative;
+    border: 2px solid #ececef; 
+    
+}
+
+.hours{
+    align-self: center;
+    max-height: 100%; 
+}
+
+
+.hours span{
+    font-size: 0.8em;
+    color: #ccced2;
+    font-weight: 600;
+}
+ 
+   
+.days{
+    grid-area: content;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(12, 140px);
+    position: relative;
+    border: 1px solid #ececef;     
+    max-height: 100%; 
+}
+
+.container-cards,
+.extend{
+    border: 1px solid #ececef;
+    display: grid;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.container-cards .card,
+.extend .card{
+    margin: 4%;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    border-radius: 10px;
+    place-content: center; 
+    
+}
+
+.card .card-img{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 10px;
+    
+}
+.card .card-img img:nth-child(1){
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+
+}
+
+.card .card-img img:nth-child(2){
+    width: 18px;
+    height: 18px;
+    
+}
+
+.container-cards .card span,
+.extend .card  span{
+    margin-top: 3px;
+    margin-left: 35px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.container-cards .card span:nth-of-type(3),
+.extend .card span:nth-of-type(3){
+    margin-bottom: 10px;
+    
+}
+
+.container-cards .card span:nth-of-type(1),
+.extend .card span:nth-of-type(1){
+    color: #c1c3c8;
+    font-size: 0.8em;
+}
+
+
+.days .ext1{
+    grid-area: 5/4/7/4;
+    
+}
+
+.days .ext2{
+    grid-area: 10/2/12/2;
+    
+}
+
+.days .ext3{
+    grid-area: 8/5/12/5;
+    
+}
+
+.days .ext4{
+    grid-area: 4/2/6/2;
+}
+
+.days .ext5{
+    grid-area: 1/4/3/4;
+}
+
+
+.color1{
+    background-color: #fcf0e4;
+}
+
+.color2{
+    background-color: #ecf5e7;
+}
+
+ .color3{
+    background-color: #DAFDBA;
+}
+
+.color4{
+    background-color: #b5f8ee;
+}
+
+.color5{
+    background-color: #dcdcfc;
+}
+
+.container-cards:hover,
+.extend:hover{
+    background-color: #f4e4e486;
+}
+
+.days .position:hover{
+    height: 130%;
+    left: -30px;
+    top: -50px;
+    z-index: 2;
+    position: relative;
+}
