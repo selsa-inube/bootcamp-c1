@@ -1,0 +1,423 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: georgia, sans-serif, 'Times New Roman', Times;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 75px 60px 1fr;
+    grid-template-areas:
+        "header"
+        "nav"
+        "content";
+    padding: 0% 4% 2% 4%;
+    width: 100%;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    display: inline-flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+}
+
+button:active{
+    filter: invert(20%);
+    color: red;
+}
+
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    border-bottom: 2px solid #ebe9e9;
+}
+
+.header li {
+    margin-right: 20px;
+}
+
+.header ul img {
+    width: 17px;
+}
+
+.header figure {
+    display: flex;
+    justify-content: center;
+}
+
+.header img[ alt="logo"] {
+    width: 170px;
+}
+
+.header div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header button {
+    font-size: 10px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.header-btn-one {
+    border: none;
+    background-color: transparent;
+    margin-right: 30px;
+}
+
+.header-btn-two {
+    padding: 10px 15px 10px 15px;
+    background-color: white;
+    border: 1px solid #aba9a9;
+}
+
+
+.menu {
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: 100px 1fr 60px;
+    align-items: center;
+    height: 100%;
+}
+
+
+.menu-date span:nth-of-type(1) {
+    font-size: 0.9em;
+}
+
+.menu-date span:nth-of-type(2) {
+    font-size: 0.7em;
+}
+
+.menu-date span {
+    display: block;
+    font-weight: bolder;
+}
+
+
+.menu ul {
+    margin: 0px 15px 0px 35px;
+    justify-content: space-between;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu ul li a,
+.submenu ul li a,
+.submenu-two ul li a{
+    color: #8d8b8b;
+    font-size: 13px;
+    font-weight: 800;
+
+}
+
+.menu ul li a:hover,
+.submenu-two ul li a:hover {
+    color: #252323;
+}
+
+.menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-icon img[alt="points"] {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+
+
+
+.content {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 50px 1fr 150px;
+    grid-template-areas: 
+    "submenu submenu"
+    "sections aside"
+    "submenu2 submenu2";
+    width: 100%;
+    
+
+}
+
+.submenu{
+    grid-area: submenu;
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    align-items: center;
+    height: 50px;
+}
+
+.submenu h2 {
+    font-size: 1.1em;
+}
+
+.submenu ul {
+    justify-content: flex-start;
+}
+
+.submenu ul li {
+    margin-right: 30px;
+}
+
+.submenu ul li a:hover {
+    color: #252323;
+    text-decoration: underline;
+}
+
+
+.content-sections {
+    grid-area: sections;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 3%;
+    margin-bottom: 20px;
+}
+
+.color-text {
+    color: #8d8b8b;
+}
+
+.content-btns-sect{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin:25px 0px 15px 0px;
+}
+
+.content-section-one img{
+    width: 250px;
+}
+
+
+.content-section-one h3{
+    font-size: 1.7em;
+    line-height: 40px;
+}
+
+.content-section-one p{
+    margin: 20px 0px 20px 0px;
+    font-size: 0.9em;
+    line-height: 28px;
+
+}
+
+.content-btns-sect button{
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 0.6em;
+    font-weight: 600;
+    padding: 5px 10px 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.content-btns-sect span,
+.continue,
+.menu-date span{
+    font-family: sans-serif;
+}
+
+
+.content-btns-sect span{
+    font-size: 0.7em;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+
+.continue,
+.aside-other-news p, 
+.aside-other-news h3 {
+    font-size: 0.7em;
+    font-weight: 600;
+}
+.continue{
+    padding-bottom: 10px;
+    border-bottom: 2px solid #9f9d9d;
+    cursor: pointer;
+}
+
+.content-section-two{
+    padding: 0% 7% 0% 8%;
+    line-height: 25px;
+}
+
+.content-section-two img[alt="points2"]{
+    margin-top: 4%;
+    filter: grayscale(1);
+}
+
+.content-section-two h2,
+.aside-other-news h2{
+    font-size: 1em;
+}
+
+.content-section-two h3{
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.content-section-two article:nth-of-type(2){
+    margin-top: 13%;
+}
+
+.content-section-two{
+    border-left: 2px solid #edebeb;
+    border-right: 2px solid #edebeb;
+}
+
+.aside-other-news{
+    grid-area: aside;
+    padding: 8% 0% 0% 10%;
+    
+}
+
+.aside-other-news article{
+    display: flex;
+    flex-direction:row;
+    margin-bottom: 5%;
+}
+
+.aside-other-news h2{
+    margin-bottom: 10%;
+}
+
+.aside-news-text{
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+}
+
+.aside-other-news h3 {
+    margin:5px 0px 10px 0px;
+}
+
+.aside-news-img{
+    width: 100px;
+    height: 100px;
+   
+}
+
+.aside-other-news figure{
+   margin-left: 10px;
+}
+
+.aside-other-news figure img[alt="stadium"]{
+    margin-left: 12px;
+ }
+
+ .content-section-three{
+   grid-area: submenu2 ; 
+    border-top: 2px solid #edebeb;
+    display: grid;
+    grid-column: span 2/3;
+    grid-row: 3/3;
+
+ }
+
+ .submenu-two{
+    display: grid;
+    grid-template-columns: 150px 1fr 200px;
+    align-items: center;
+    height: 65px;
+ }
+
+ .submenu-two ul {
+    margin: 0px 15px 0px 35px;
+    justify-content: flex-start;
+}
+
+.submenu-two li {
+    margin-right: 20px;
+}
+
+.submenu-two-full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.submenu-two-full span{
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+.submenu-two-full img[alt="arrow"] {
+    width: 20px;
+    height: 20px;
+
+}
+
+.content-cards{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.card{
+    width: 210px;
+    height: 90px;
+    margin-right: 20px;
+    line-height: 20px;
+ 
+}
+
+.card p, 
+.card span{
+    color: #ffffff;
+    font-family: sans-serif;
+    margin: 8px 20px 0px 10px;
+}
+
+.card p{
+    font-size: 0.8em;
+}
+
+.card span{
+    font-size: 0.7em;
+}
+
+.card p:nth-of-type(1),
+.card span:nth-of-type(2){
+    font-weight: 600;
+}
+
+.card-color-g {
+    background-color: #5c8d5d ;
+}
+
+.card-color-b {
+    background-color: #000000 ;
+}
+
+.card-color-r {
+    background-color: #c9495b ;
+}
+
+
+
