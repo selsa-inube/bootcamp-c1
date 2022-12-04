@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    width: 85%;
+    display: flex;
+    padding: 20px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul li {
+    margin: auto;
+    display: inline;
+    padding: 0px 15px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.hamburger {
+    padding: 12px;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #000;
+}
+
+.content h1 {
+    font-size: 100px;
+    font-weight: 400;
+    margin: 50px 350px 100px 130px;
+}
+
+.buttons {
+    width: 82%;
+    margin: 0 auto 100px;
+}
+
+.buttons p {
+    float: right;
+}
+
+.two-btn {
+    display: flex;
+}
+
+.btn-one {
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin: 0px 10px;
+    padding: 15px 40px;
+    border-radius: 50px;
+    background-color: #212a33;
+}
+
+.btn-two {
+    border: none;
+    display: flex;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 15px 40px;
+    border-radius: 50px;
+}
+
+.btn-three {
+    border: none;
+    display: flex;
+    cursor: pointer;
+    padding: 15px 20px;
+    border-radius: 50px;
+}
+
+.content-one {
+    display: flex;
+    height: 700px;
+    color: #ffffff;
+    background-color: #212a33;
+}
+
+.content-two-profile {
+    width: 300px;
+    height: 50px;
+    margin: 80px 150px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.text-profile {
+    display: flex;
+    margin-left: 5%;
+    flex-direction: column;
+}
+
+.content-two {
+    width: 600px;
+    height: 550px;
+    margin: 60px 0px 0px 200px;
+}
+
+.content-two h2 {
+    font-size: 70px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.content-two p {
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+
+picture {
+    top: 1000px;
+    left: 150px;
+    position: absolute;
+}
+
+footer {
+    height: 100px;
+}
+
+@media only screen and (max-width: 400px) {
+
+    header {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header ul li {
+        display: none;
+    }
+
+    .content h1 {
+        font-size: 65px;
+        font-weight: 400;
+        margin: 50px 40px;
+    }
+
+    .buttons p {
+        margin: 50px 0px 10px 0px;
+    }
+
+    .content-two-profile {
+        position: absolute;
+        top: 230%;
+        left: 20px;
+        margin: auto;
+    }
+
+
+    .profile img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    .content-two {
+        width: 400px;
+        height: 700px;
+        margin: 0;
+    }
+
+    .content-two h2 {
+        font-size: 50px;
+        font-weight: 300;
+        margin-bottom: 50px;
+    }
+
+    .btn-three {
+        margin: 0 auto;
+        padding: 15px 150px;
+    }
+
+    picture {
+        top: 240%;
+        left: 5px;
+        position: absolute;
+    }
+
+    footer {
+        height: 500px;
+    }
+}
