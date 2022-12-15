@@ -75,8 +75,8 @@ function dominantDirection(text) {
     }).filter(({name}) => name != "none");
     
     /*si el array filtrado tiene al menos un elemento la funcion reduce el array a un unico elemento utilizando la direcion 
-    de escritura mas comun o repetida en la cadena de texto. si no hay una direccion de escritura dominante la funcion retorna "ltr" (izquierda a derecha)*/
-    return scripts.length > 0 ? scripts.reduce((a, b) => a.count > b.count ? a : b).name : "ltr";
+    de escritura mas comun o repetida en la cadena de texto. si no hay una direccion de escritura dominante la funcion retorna undefined*/
+    return scripts.length > 0 ? scripts.reduce((a, b) => a.count > b.count ? a : b).name : undefined;
   }
 
 //se ejecutan las respectivas pruebas en la consola
@@ -85,3 +85,6 @@ console.log(dominantDirection("Hey, مساء الخير"));
 
 //se incluyo el mongol tradicional en el cual la direccion de escritura es de arriba a abajo
 console.log(dominantDirection("ᠮᠣᠩᠭᠣᠯ ᠪᠢᠴᠢᠭ"));
+
+console.log(dominantDirection("14#/*%"));
+console.log(dominantDirection(""));
